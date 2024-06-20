@@ -1,6 +1,6 @@
 @import '../variables.scss';
 
-.page-body__header--grid {
+.header--grid {
   margin-top: 40px;
   padding-top: 43px;
 }
@@ -10,7 +10,7 @@
 
 // }
 
-.page-body__header {
+.header {
   position: relative;
   background-color: $yellow-light; // Correct
 }

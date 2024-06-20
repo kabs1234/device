@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-body__header page-body__header--grid">
+    <header class="header header--grid">
 
       <svg class="header__logo" width="145.000305" height="36.000023" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs/>
@@ -39,7 +39,7 @@
       </nav>
 
       <nav class="header__nav header__nav--grid">
-        <ul class="nav__list nav-list">
+        <ul class="nav-list">
           <li class="nav-list__item">Каталог товаров</li>
           <li class="nav-list__item">Доставка</li>
           <li class="nav-list__item">Гарантия</li>
@@ -49,10 +49,184 @@
     </header>
 
     <main class="main">
+      <h1 class="visually-hidden">Магазин Device это - современные гаджеты, по доступным ценам!</h1>
 
+      <section class="product">
+        <div class="slider">
+          <button class="slider__button">
+            <span class="visually-hidden">Предыдущий элемент</span>
+          </button>
+          <img src="./images/content/product-1.png" alt="Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру." width="360" height="380">
+          <button class="slider__button">
+            <span class="visually-hidden">Предыдущий элемент</span>
+          </button>
+        </div>
+
+        <p class="product__slogan">Порхает как бабочка, жалит как пчела!</p>
+        <p class="product__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a href="#product1" class="product__link">Подробнее</a>
+
+        <ul class="slider-thumbs">
+          <li class="slider-thumbs__item">1</li>
+          <li class="slider-thumbs__item">2</li>
+          <li class="slider-thumbs__item">3</li>
+        </ul>
+
+        <dl class="product__characteristics">
+          <dt class="product__quality">Дальность полета</dt>
+          <dd class="product__value">800 м</dd>
+
+          <dt class="product__quality">Радиус поражения</dt>
+          <dd class="product__value">50 м</dd>
+        </dl>
+      </section>
+
+      <section class="goods">
+        <ul class="goods-list">
+          <li class="goods-list__item">
+            <a href="#virtual-reality" class="goods-list__link">
+              <img src="./images/content/goods-1.svg" alt="Виртуальная
+              реальность">
+              <span class="goods-list__name">Виртуальная
+                реальность</span>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#selfie-sticks" class="goods-list__link">
+              <img src="./images/content/goods-2.svg" alt="Моноподы
+              для селфи">
+              <span class="goods-list__name">Моноподы
+                для селфи</span>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#action-cameras" class="goods-list__link">
+              <img src="./images/content/goods-3.svg" alt="Экшн-камеры">
+              <span class="goods-list__name">Экшн-камеры</span>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#fitness-braclets" class="goods-list__link">
+              <img src="./images/content/goods-4.svg" alt="Фитнес-браслеты">
+              <span class="goods-list__name">Фитнес-браслеты</span>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#smart-watches" class="goods-list__link">
+              <img src="./images/content/goods-5.svg" alt="Умные часы">
+              <span class="goods-list__name">Умные часы</span>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#quadcopters" class="goods-list__link">
+              <img src="./images/content/goods-6.svg" alt="Квадрокоптеры">
+              <span class="goods-list__name">Квадрокоптеры</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="opportunity">
+        <ul class="opportunity__list opportunity-list">
+          <li class="opportunity-list__item">
+            <button class="opportunity-list__button">Доставка</button>
+          </li>
+          <li class="opportunity-list__item">
+            <button class="opportunity-list__button">Гарантия</button>
+          </li>
+          <li class="opportunity-list__item">
+            <button class="opportunity-list__button">Кредит</button>
+          </li>
+        </ul>
+
+        <p class="opportunity__name">Доставка</p>
+        <p class="opportunity__description">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+
+      <section class="delievery">
+        <h2 class="delievery__heading">Доставим редкий товар под заказ</h2>
+
+        <section class="about-us">
+          <h3 class="about-us__heading">О нас</h3>
+
+          <p class="abouts-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="abouts-us__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+
+          <ul class="about-us__transport-companies transport-companies">
+            <li class="transport-companies__item">Меловые линии</li>
+            <li class="transport-companies__item">СДИК</li>
+            <li class="transport-companies__item">ТоксБерри</li>
+          </ul>
+
+          <a href="#more-about-us" class="about-us__link">Подробнее о нас</a>
+        </section>
+
+        <section class="contacts">
+          <h3 class="contacts__heading">О нас</h3>
+
+          <p class="contacts__store">Интернет-магазин «Девайс»</p>
+          <p class="contacts__store-location">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a href="tel:+78128121212" class="contacts__store-phone">+7 (812) 812-12-12</a>
+
+          <p class="contacts__working-time">Время работы</p>
+          <p class="contacts__working-durations">
+            пн—пт: с 10:00 до 22:00
+            сб—вс: с 10:00 до 19:00
+          </p>
+
+          <a href="#write-us" class="contacts__link">Напишите нам</a>
+        </section>
+      </section>
+
+      <section class="subscription">
+        <p class="subscription__title">Подпишитесь
+          на рассылку</p>
+
+        <p class="subscription__text">Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+
+        <form class="subscription__form">
+          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input type="submit" value="Подписаться">
+        </form>
+
+        <span class="subscription__info">Это бесплатно</span>
+      </section>
     </main>
 
     <footer class="footer">
+      <svg width="144.900208" height="36.000000" viewBox="0 0 144.9 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs/>
+        <path id="Vector" d="M27.2 0L27.2 35.3L19.6 35.3L19.6 32.89C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.39 12.1 9.39C15.5 9.39 18 10.6 19.6 12.5L19.6 0L27.2 0ZM19.6 22.7C19.6 18.89 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.89 7.6 22.7C7.6 26.5 10.1 28.89 13.6 28.89C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M43.7 29.2C45.8 29.2 47.5 28.39 48.5 27.29L54.6 30.79C52.1 34.2 48.4 36 43.6 36C35 36 29.6 30.2 29.6 22.7C29.6 15.2 35 9.39 43 9.39C50.4 9.39 55.8 15.09 55.8 22.7C55.8 23.79 55.7 24.79 55.5 25.7L37.59 25.7C38.59 28.29 40.9 29.2 43.7 29.2ZM48.3 20.09C47.5 17.2 45.2 16.09 42.9 16.09C40 16.09 38.09 17.5 37.4 20.09L48.3 20.09Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M82.1 10.1L72.8 35.3L64.19 35.3L54.9 10.1L63.3 10.1L68.6 26.1L73.9 10.1C73.9 10.1 82.1 10.1 82.1 10.1Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M83.4 10.1L91 10.1L91 35.3L83.4 35.3L83.4 10.1Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M93.6 22.7C93.6 15.2 99.3 9.39 107 9.39C111.9 9.39 116.2 12 118.4 15.89L111.8 19.7C110.9 17.89 109.1 16.89 106.9 16.89C103.6 16.89 101.2 19.29 101.2 22.7C101.2 26.2 103.6 28.5 106.9 28.5C109.1 28.5 111 27.39 111.8 25.7L118.4 29.5C116.3 33.39 112 36 107 36C99.3 36 93.6 30.2 93.6 22.7Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M132.8 29.2C134.89 29.2 136.6 28.39 137.6 27.29L143.7 30.79C141.2 34.2 137.5 36 132.7 36C124.1 36 118.7 30.2 118.7 22.7C118.7 15.2 124.2 9.39 132.1 9.39C139.5 9.39 144.89 15.09 144.89 22.7C144.89 23.79 144.8 24.79 144.6 25.7L126.7 25.7C127.7 28.29 130 29.2 132.8 29.2ZM137.5 20.09C136.7 17.2 134.39 16.09 132.1 16.09C129.2 16.09 127.3 17.5 126.6 20.09L137.5 20.09Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <path id="Vector" d="M83.4 0L83.4 10.1L91 0L83.4 0Z" fill="#FFC700" fill-opacity="1.000000" fill-rule="nonzero"/>
+      </svg>
+
+      <address class="footer__address">Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.</address>
+
+      <nav class="footer__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="#delievery" class="nav-list__link">Доставка</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#warranty" class="nav-list__link">Гарантия</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="tel:+78128121212" class="footer__phone">Тел.: +7 (812) 812-12-12</a>
+
 
     </footer>
   </body>

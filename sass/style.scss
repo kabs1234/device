@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 @font-face {
   font-family: 'Rubik';
   font-display: swap;
@@ -33,6 +35,24 @@
 }
 
 body {
+  color: $black;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
   width: 1280px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
