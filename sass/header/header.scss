@@ -1,24 +1,21 @@
 @import '../variables.scss';
 
-.header--grid {
-  margin-top: 40px;
-  padding-top: 43px;
-}
-
-// .page-body__header--grid-index {
-//   padding-bottom: 23px;
-
-// }
-
 .header {
+  width: 1160px;
+  margin: 0 auto;
   position: relative;
-  background-color: $yellow-light; // Correct
+  background-color: $yellow-light;
+
+  &--grid {
+    margin-top: 41px;
+    padding-top: 42px;
+  }
 }
 
 .header__logo {
   position: absolute;
   top: -23px;
-  left: 68px;
+  left: 60px;
 }
 
 .user-nav {
@@ -28,7 +25,8 @@
   line-height: 30px;
   color: $black;
   display: grid;
-  grid-template-columns: 799px 241px;
+  grid-template-columns: 519px 494px;
+  column-gap: 26px;
   align-items: center;
   margin: 0 60px;
 }
@@ -45,45 +43,120 @@
   justify-content: space-evenly;
 }
 
+.user-list__item {
+  &:first-child {
+    margin-left: 25px;
+    margin-right: auto;
+  }
+
+  &:nth-child(2) {
+    margin-right: 62px;
+  }
+}
+
 .user-list__link {
   color: #000;
   text-decoration: none;
 }
 
+.user-list__button {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .search-bar {
   display: inline-block;
-  padding: 10px 146px 10px 48px;
+  padding: 12px 146px 10px 48px;
   border: 2px solid $black;
   border-radius: 50px 0px 0px 50px;
   background-color: transparent;
 }
 
+.search-bar::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
 .search-button {
-  padding: 10px 59px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: -7px;
+  padding: 9px 55px;
   border: 2px solid $black;
   border-radius: 0px 50px 50px 0px;
   text-align: center;
+  background-color: transparent;
 }
 
 .header__nav {
   margin: 0 60px;
-}
 
-.header__nav--grid {
-  margin-top: 30px;
+  &--grid {
+    margin-top: 30px;
+  }
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-around;
 }
 
 .nav-list__item {
+  &:first-child {
+    margin-right: auto;
+  }
+
+  &:nth-child(2) {
+    margin-right: 47px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 52px;
+  }
+}
+
+.nav-list__link {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   color: $black;
-  padding: 15px 11px;
+  letter-spacing: 3px;
+  display: block;
+  padding: 15px 0;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-list__button {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: $black;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  display: block;
+  padding: 15px 11px;
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+
+  letter-spacing: 3.5px;
 }

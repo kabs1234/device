@@ -1,0 +1,62 @@
+@import "../_variables.scss";
+
+.contacts__heading {
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 48px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__store {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $dark;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts__store-location {
+  margin: 0;
+  color: $dark;
+}
+
+.contacts__store-phone {
+  color: $dark;
+  text-decoration: underline;
+}
+
+.contacts__working {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $dark;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contacts__working-time {
+  margin-bottom: 30px;
+}
+
+.contacts__link {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $yellow-light;
+}

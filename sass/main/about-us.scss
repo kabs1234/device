@@ -1,0 +1,46 @@
+@import "../_variables.scss";
+
+
+.about-us__heading {
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.about-us__text {
+  margin-bottom: 30px;
+}
+
+.about-us__transport-companies {
+  margin: 0;
+  padding: 0;
+}
+
+.transport-companies__item {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 19px;
+}
+
+.transport-companies__item::marker {
+  color: $yellow-light;
+}
+
+.about-us__link {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $yellow-light;
+}
