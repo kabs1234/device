@@ -1,12 +1,40 @@
 @import "../_variables.scss";
 
+.contacts {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 7px;
+    left: 0px;
+    top: 0px;
+    background-color: $black;
+  }
+
+  &::after {
+    content: "i";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 50%;
+  }
+}
+
 .contacts__heading {
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin-bottom: 48px;
+  margin: 47px 0;
 }
 
 .contacts__text {
@@ -46,7 +74,8 @@
 }
 
 .contacts__working-time {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .contacts__link {
@@ -54,7 +83,10 @@
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
+  letter-spacing: 3.5px;
   color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 0 33px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;

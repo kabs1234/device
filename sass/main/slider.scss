@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: -126px;
+  margin-top: -123px;
   margin-right: 40px;
 }
 
@@ -14,8 +14,18 @@
   position: absolute;
   width: 20px;
   height: 60px;
+  top: 211px;
   border: none;
   background: url("../../images/decorative/pointer.svg") no-repeat;
+
+  &--previous {
+    left: 31px;
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    right: 0;
+  }
 }
 
 .slider-thumbs {

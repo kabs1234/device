@@ -1,5 +1,19 @@
 @import "../_variables.scss";
 
+.about-us {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 7px;
+    left: 0px;
+    top: 0px;
+    background-color: $black;
+  }
+}
+
 
 .about-us__heading {
   font-family: Raleway;
@@ -7,7 +21,7 @@
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin-top: 40px;
+  margin-top: 47px;
   margin-bottom: 48px;
 }
 
@@ -17,6 +31,7 @@
 
 .about-us__transport-companies {
   margin: 0;
+  margin-bottom: 37px;
   padding: 0;
 }
 
@@ -26,7 +41,11 @@
   font-weight: 700;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  margin-bottom: 19px;
+  margin-left: 34px;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }
 
 .transport-companies__item::marker {
@@ -38,9 +57,12 @@
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
+  letter-spacing: 3.5px;
   color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 0 24px;
+  background-color: $yellow-light;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $yellow-light;
 }

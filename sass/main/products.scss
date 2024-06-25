@@ -1,13 +1,27 @@
 @import "../_variables.scss";
 
 .product {
+  position: relative;
   width: 1160px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
   padding-top: 107px;
   background: linear-gradient($yellow-light 134px, #fff 0);
+
+  &::before {
+    content: '01';
+    position: absolute;
+    top: 64px;
+    right: 48px;
+    font-family: Rubik;
+    font-size: 180px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+  }
 }
 
 .product__slogan {
@@ -29,9 +43,10 @@
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 4px;
-  padding: 5px 38px;
+  padding: 5px 36px;
 
-  background-color: $yellow-light;
+  background: linear-gradient($white 5px, $yellow-light 50px, $white 5px);
+  background: linear-gradient(#fff 14px, #ffe17f 0px), linear-gradient(#ffe17f 1px, #fff 14px);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;

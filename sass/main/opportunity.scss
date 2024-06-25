@@ -1,18 +1,64 @@
 @import "../_variables.scss";
 
 .opportunity {
-  padding: 0 140px;
-  display: grid;
-  grid-template-columns: 287px 448px;
-  column-gap: 116px;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 70px;
   background: linear-gradient($white 106px, $light 0px);
 }
 
+.opportunity__wrapper {
+  position: relative;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 287px 448px;
+  column-gap: 120px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $black;
+    width: 7px;
+    height: 319px;
+    left: 281px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 164px;
+    right: 63px;
+    top: 78px;
+    background: url("../../images/decorative/mailman.svg") no-repeat;
+  }
+
+}
+
 .opportunity__list {
   margin: 0;
+  margin-top: 64px;
   padding: 0;
   list-style-type: none;
+}
+
+.opportunity-list__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.opportunity-list__item--active {
+  background-color: $black;
+}
+
+.opportunity-list__item--active .opportunity-list__button {
+  color: $yellow-light;
+  background-color: transparent;
 }
 
 .opportunity-list__button {
@@ -20,11 +66,16 @@
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 3px;
   color: $black;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 22px;
   border: none;
   background-color: $yellow-light;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .opportunity__name {
@@ -39,5 +90,6 @@
 }
 
 .opportunity__description {
+  margin: 0;
   margin-bottom: 73px;
 }
