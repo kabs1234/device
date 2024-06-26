@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 520px 532px;
   column-gap: 108px;
-  margin-bottom: 70px;
+  margin-bottom: 74px;
 }
 
 .delievery__heading {
@@ -31,7 +31,7 @@
     width: 125px;
     height: 100px;
     left: 0;
-    top: 3px;
+    top: 0;
     background: $yellow-light url("../../images/decorative/delievery.svg") no-repeat center;
   }
 
@@ -40,12 +40,14 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    right: 0px;
-    top: 0px;
+    right: 41px;
+    top: 33px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(220, 220, 220, 0.5);
     border-radius: 50%;
+    text-transform: lowercase;
   }
 }

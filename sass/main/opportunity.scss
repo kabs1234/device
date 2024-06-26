@@ -4,7 +4,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 70px;
-  background: linear-gradient($white 106px, $light 0px);
+  background: linear-gradient($white 104px, $light 0px);
 }
 
 .opportunity__wrapper {
@@ -12,9 +12,9 @@
   width: 1160px;
   display: grid;
   grid-template-columns: 287px 448px;
-  column-gap: 120px;
+  column-gap: 116px;
   margin: 0 auto;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 
 
   &::before {
@@ -59,9 +59,15 @@
 .opportunity-list__item--active .opportunity-list__button {
   color: $yellow-light;
   background-color: transparent;
+
+  &::before {
+    background-color: transparent;
+  }
 }
 
 .opportunity-list__button {
+  position: relative;
+  min-width: 160px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
@@ -69,13 +75,23 @@
   letter-spacing: 3px;
   color: $black;
   display: block;
-  padding-top: 9px;
-  padding-bottom: 11px;
-  padding-left: 22px;
+  padding: 9px 18px 11px;
   border: none;
-  background-color: $yellow-light;
   text-align: center;
   text-transform: uppercase;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    top: 20px;
+    left: 0;
+    background-color: $yellow-light;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
 }
 
 .opportunity__name {

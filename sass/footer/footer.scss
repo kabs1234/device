@@ -1,3 +1,6 @@
+@import "../_variables.scss";
+
+
 .footer {
   width: 100%;
   background-color: rgb(68, 68, 68);
@@ -13,15 +16,25 @@
 
 .footer__container {
   display: flex;
-  align-items: center;
-  margin-top: 35px;
+  margin-top: 26px;
   margin-bottom: 47px;
 }
 
 .footer__wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 7px;
+    top: 17px;
+    left: 1px;
+    background-color: $yellow-hover;
+  }
 }
 
 .footer__address {
@@ -34,7 +47,7 @@
 }
 
 .footer-list__item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 32px;
 }
 
 .footer-list {

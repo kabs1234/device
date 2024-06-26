@@ -2,12 +2,11 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
-    <title>Device</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
-    <header class="header header--grid">
-
+    <header class="header header--grid header--catalog">
       <svg class="header__logo" width="145.000305" height="36.000023" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs/>
         <path id="Vector" d="M27.21 0L27.21 35.3L19.61 35.3L19.61 32.9C17.91 34.8 15.51 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.39 12.1 9.39C15.51 9.39 18.01 10.6 19.61 12.5L19.61 0L27.21 0ZM19.61 22.7C19.61 18.9 17.11 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.11 28.8 19.61 26.5 19.61 22.7Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
@@ -59,176 +58,168 @@
       </nav>
     </header>
 
-    <main class="main">
-      <h1 class="visually-hidden">Магазин Device это - современные гаджеты, по доступным ценам!</h1>
+    <main class="main__catalog catalog">
+      <div class="catalog__wrapper">
+        <h1 class="catalog__name">Моноподы для селфи</h1>
 
-      <section class="product">
-        <div class="slider">
-          <button class="slider__button slider__button--previous">
-            <span class="visually-hidden">Предыдущий предмет</span>
-          </button>
-          <img src="./images/content/product-1.png" alt="Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру." width="560" height="560">
-          <button class="slider__button slider__button--next">
-            <span class="visually-hidden">Следующий предмет</span>
-          </button>
-        </div>
-
-        <div class="product__info">
-          <p class="product__slogan">Порхает как бабочка, жалит как пчела!</p>
-          <p class="product__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-
-          <div class="product__wrapper">
-            <a href="#product1" class="product__link">Подробнее</a>
-
-            <ol class="slider-thumbs">
-              <li class="slider-thumbs__item slider-thumbs__item--active">
-                <span class="visually-hidden">1 item</span>
-              </li>
-              <li class="slider-thumbs__item">
-                <span class="visually-hidden">2 item</span>
-              </li>
-              <li class="slider-thumbs__item">
-                <span class="visually-hidden">3 item</span>
-              </li>
-            </ol>
-          </div>
-
-          <dl class="product__characteristics">
-            <div class="product__characteristics-wrapper">
-              <dt class="product__quality">Дальность полета</dt>
-              <dd class="product__value">800 м</dd>
-            </div>
-
-            <div class="product__characteristics-wrapper">
-              <dt class="product__quality">Радиус поражения</dt>
-              <dd class="product__value">50 м</dd>
-            </div>
-          </dl>
-
-        </div>
-      </section>
-
-      <section class="goods">
-        <ul class="goods-list">
-          <li class="goods-list__item">
-            <a href="#virtual-reality" class="goods-list__link">
-              <img src="./images/content/goods-1.svg" alt="Виртуальная
-            реальность">
-            </a>
-            <span class="goods-list__name">Виртуальная реальность</span>
+        <ul class="catalog__breadcrumbs-list breadcrumbs-list">
+          <li class="breadcrumbs-list__item">
+            <a href="#main" class="breadcrumbs-list__link">Главная</a>
           </li>
-          <li class="goods-list__item">
-            <a href="#selfie-sticks" class="goods-list__link">
-              <img src="./images/content/goods-2.svg" alt="Моноподы
-            для селфи">
-            </a>
-            <span class="goods-list__name">Моноподы для&nbsp;селфи</span>
+          <li class="breadcrumbs-list__item">
+            <a href="#catalog-all" class="breadcrumbs-list__link">Каталог товаров</a>
           </li>
-          <li class="goods-list__item">
-            <a href="#action-cameras" class="goods-list__link">
-              <img src="./images/content/goods-3.svg" alt="Экшн-камеры">
-            </a>
-            <span class="goods-list__name">Экшн-камеры</span>
-          </li>
-          <li class="goods-list__item">
-            <a href="#fitness-braclets" class="goods-list__link">
-              <img src="./images/content/goods-4.svg" alt="Фитнес-браслеты">
-            </a>
-            <span class="goods-list__name">Фитнес-браслеты</span>
-          </li>
-          <li class="goods-list__item">
-            <a href="#smart-watches" class="goods-list__link">
-              <img src="./images/content/goods-5.svg" alt="Умные часы">
-            </a>
-            <span class="goods-list__name">Умные часы</span>
-          </li>
-          <li class="goods-list__item">
-            <a href="#quadcopters" class="goods-list__link">
-              <img src="./images/content/goods-6.svg" alt="Квадрокоптеры">
-            </a>
-            <span class="goods-list__name">Квадрокоптеры</span>
+          <li class="breadcrumbs-list__item">
+            <a class="breadcrumbs-list__link">Моноподы для селфи</a>
           </li>
         </ul>
+      </div>
+
+      <section class="catalog__filter filter-section">
+        <h2 class="filter-section__title">фильтр:</h2>
+
+        <form class="filter-section__form filter">
+          <fieldset class="filter__range range">
+            <legend class="filter__name">Стоимость</legend>
+
+            <div class="range__control">
+              <label class="range__field">
+                <span class="range__name">от 0</span>
+                <input type="range" class="range__input" name="price-from" value="0" min="0" max="10000">
+              </label>
+              <label class="range__field">
+                <span class="range__name">до 5000</span>
+                <input type="range" class="range__input" name="price-to" value="5000" min="0" max="10000">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__checkbox checkbox">
+            <legend class="filter__name">Цвет</legend>
+
+            <ul class="checkbox__list">
+              <li class="checkbox__list__item">
+                <label class="checkbox__label">
+                  <input type="checkbox" value="black" name="color"  class="checkbox__input" checked>
+                  <span class="checkbox__value">Черный</span>
+                </label>
+              </li>
+              <li class="checkbox__list__item">
+                <label class="checkbox__label">
+                  <input type="checkbox" value="white" name="color"  class="checkbox__input" checked>
+                  <span class="checkbox__value">Белый</span>
+                </label>
+              </li>
+              <li class="checkbox__list__item">
+                <label class="checkbox__label">
+                  <input type="checkbox" value="blue" name="color"  class="checkbox__input">
+                  <span class="checkbox__value">Синий</span>
+                </label>
+              </li>
+              <li class="checkbox__list__item">
+                <label class="checkbox__label">
+                  <input type="checkbox" value="red" name="color"  class="checkbox__input">
+                  <span class="checkbox__value">Красный</span>
+                </label>
+              </li>
+              <li class="checkbox__list__item">
+                <label class="checkbox__label">
+                  <input type="checkbox" value="pink" name="color"  class="checkbox__input">
+                  <span class="checkbox__value">Розовый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__radio radio">
+            <legend class="filter__name">Bluetooth</legend>
+
+            <label for="" class="radio__label">
+              <input type="radio" class="radio__input" value="with" name="bluetooth">
+              <span class="radio__value">Есть</span>
+            </label>
+            <label for="" class="radio__label">
+              <input type="radio" class="radio__input" value="without" name="bluetooth">
+              <span class="radio__value">Нет</span>
+            </label>
+          </fieldset>
+
+          <input type="submit" value="Показать" class="filter__submit">
+        </form>
       </section>
 
-      <section class="opportunity">
-        <div class="opportunity__wrapper">
-          <ul class="opportunity__list opportunity-list">
-            <li class="opportunity-list__item opportunity-list__item--active">
-              <button class="opportunity-list__button">Доставка</button>
-            </li>
-            <li class="opportunity-list__item">
-              <button class="opportunity-list__button">Гарантия</button>
-            </li>
-            <li class="opportunity-list__item">
-              <button class="opportunity-list__button">Кредит</button>
-            </li>
-          </ul>
+      <section class="catalog__sort sort">
+        <form class="sort__form">
+          <label for="sort-types">сортировка:</label>
+          <select id="sort-types" name="sort">
+            <option value="by-popularity">Популярные</option>
+            <option value="by-price">Дешевые</option>
+            <option value="by-date">Новые</option>
+          </select>
+        </form>
 
-          <div class="opportunity__container">
-            <p class="opportunity__name">Доставка</p>
-            <p class="opportunity__description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь<br> мы&nbsp;неплохо&nbsp;заработаем,&nbsp;поднимая&nbsp;его&nbsp;на&nbsp;ваш&nbsp;этаж.</p>
+        <button class="sort__button">
+          <span class="visually-hidden">Сортировать по убыванию</span>
+        </button>
+        <button class="sort__button">
+          <span class="visually-hidden">Сортировать по повышению</span>
+        </button>
+      </section>
+
+      <section class="catalog__products catalog-products">
+        <div class="catalog-products__list">
+          <div class="catalog-product__card">
+            <a href="" class="catalog-product__link">
+              <img src="./images/content/catalog-product-1.jpg" alt="Любительская селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="catalog-product__image">
+              <span class="catalog-product__name">Любительская селфи-палка</span>
+              <span class="catalog-product__price">500 ₽</span>
+            </a>
+          </div>
+          <div class="catalog-product__card">
+            <a href="" class="catalog-product__link">
+              <img src="./images/content/catalog-product-2.jpg" alt="Профессиональная селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="catalog-product__image">
+              <span class="catalog-product__name">Профессиональная селфи-палка</span>
+              <span class="catalog-product__price">1 500 ₽</span>
+            </a>
+          </div>
+          <div class="catalog-product__card">
+            <a href="" class="catalog-product__link">
+              <img src="./images/content/catalog-product-3.jpg" alt="Непотопляемая селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="catalog-product__image">
+              <span class="catalog-product__name">Непотопляемая селфи-палка</span>
+              <span class="catalog-product__price">2 500 ₽</span>
+            </a>
+          </div>
+          <div class="catalog-product__card">
+            <a href="" class="catalog-product__link">
+              <img src="./images/content/catalog-product-4.jpg" alt="Селфи-палка «Следуй за мной» - такая-то штука, делает то-то, дизайн такой-то" class="catalog-product__image">
+              <span class="catalog-product__name">Селфи-палка «Следуй за мной»</span>
+              <span class="catalog-product__price">1 500 ₽</span>
+            </a>
           </div>
         </div>
-      </section>
 
-      <section class="delievery">
-        <h2 class="delievery__heading">Доставим редкий товар под заказ</h2>
+        <button class="catalog-product__button">Загрузить ещЁ</button>
 
-        <section class="about-us">
-          <h3 class="about-us__heading">О нас</h3>
-
-          <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
-          <p class="about-us__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-
-          <ul class="about-us__transport-companies transport-companies">
-            <li class="transport-companies__item">
-              <span class="transport-companies__name">Меловые линии</span>
+        <div class="catalog-product__pagination pagination">
+          <a href="" class="pagination__button"></a>
+          <ol class="pagination__list">
+            <li class="pagination__item">
+              <a href="#catalog-page-1" class="pagination__link">1</a>
             </li>
-            <li class="transport-companies__item">
-              <span class="transport-companies__name">СДИК</span>
+            <li class="pagination__item">
+              <a href="#catalog-page-2" class="pagination__link">2</a>
             </li>
-            <li class="transport-companies__item">
-              <span class="transport-companies__name">ТоксБерри</span>
+            <li class="pagination__item">
+              <a href="#catalog-page-3" class="pagination__link">3</a>
             </li>
-          </ul>
-
-          <a href="#more-about-us" class="about-us__link">Подробнее о нас</a>
-        </section>
-
-        <section class="contacts">
-          <h3 class="contacts__heading">Контакты</h3>
-          <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете проверить работоспособность покупки. </p>
-
-          <p class="contacts__store">Интернет-магазин «Девайс»</p>
-          <p class="contacts__store-location">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a href="tel:+78128121212" class="contacts__store-phone">+7 (812) 812-12-12</a>
-
-          <p class="contacts__working">Время работы</p>
-          <p class="contacts__working-time">
-            пн—пт: с 10:00 до 22:00<br>
-            сб—вс: с 10:00 до 19:00
-          </p>
-
-          <a href="#write-us" class="contacts__link">Напишите нам</a>
-        </section>
-      </section>
-
-      <section class="subscription">
-        <div class="subscription__wrapper">
-          <div class="subscription__container">
-            <p class="subscription__title">Подпишитесь<br>на рассылку</p>
-
-            <p class="subscription__text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-          </div>
-
-
-          <form class="subscription__form sub-form">
-            <input class="sub-form__bar" type="email" name="email" placeholder="Ваш e-mail">
-            <input class="sub-form__button" type="submit" value="Подписаться">
-
-            <span class="sub-form__info">Это бесплатно</span>
-          </form>
+            <li class="pagination__item">
+              <a href="#catalog-page-7" class="pagination__link">...</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#catalog-page-15" class="pagination__link">15</a>
+            </li>
+          </ol>
+          <a href="" class="pagination__button"></a>
         </div>
       </section>
     </main>

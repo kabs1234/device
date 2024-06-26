@@ -37,19 +37,30 @@
 }
 
 .product__link {
-  color: $black;
+  position: relative;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 4px;
+  color: $black;
   padding: 5px 36px;
-
-  background: linear-gradient($white 5px, $yellow-light 50px, $white 5px);
-  background: linear-gradient(#fff 14px, #ffe17f 0px), linear-gradient(#ffe17f 1px, #fff 14px);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    top: 18px;
+    left: 0;
+    background: linear-gradient(to right, $yellow-light 0%, $yellow-light 100%);
+    transform: translateY(-50%);
+    z-index: -1;
+  }
 }
 
 .product__description {
