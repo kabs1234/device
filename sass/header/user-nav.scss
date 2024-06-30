@@ -1,0 +1,88 @@
+@import '../variables.scss';
+
+.user-nav {
+  position: relative;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $black;
+  display: grid;
+  grid-template-columns: 519px 494px;
+  column-gap: 26px;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.user-nav__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    top: 9px;
+    left: -27px;
+    background: url("../../images/decorative/cabinet.svg") no-repeat;
+  }
+}
+
+.user-nav__logged-in {
+  display: none;
+
+  &--active {
+    display: block;
+    margin-right: auto;
+  }
+}
+
+.user-nav__username {
+  display: inline-block;
+  margin-right: 28px;
+}
+
+.user-nav__logout {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.user-nav__login {
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.user-list__item {
+  position: relative;
+
+  &:nth-child(2) {
+    margin-right: 62px;
+  }
+}
+
+.user-list__compare {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 9px;
+    left: -21px;
+    background: url("../../images/decorative/compare.svg") no-repeat;
+  }
+}

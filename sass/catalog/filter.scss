@@ -1,0 +1,54 @@
+.filter-section {
+  grid-column: 1/2;
+  margin-left: 60px;
+}
+
+.filter-section__title {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  letter-spacing: 3.5px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.filter__range, .filter__checkbox, .filter__radio {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 35px;
+
+}
+
+.filter__name {
+  position: relative;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 26px;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.filter__submit {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3.5px;
+  color: rgb(0, 0, 0);
+  display: block;
+  width: 220px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 .catalog {
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 .catalog__wrapper {
@@ -17,5 +17,18 @@
   color: rgb(0, 0, 0);
   margin: 0;
   margin-left: 60px;
+  margin-bottom: 14px;
 }
 
+.catalog__container {
+  width: 100%;
+  background-color: $light;
+}
+
+.catalog__inner-container {
+  display: grid;
+  grid-template-columns: 260px 840px;
+  column-gap: 60px;
+  width: 1160px;
+  margin: 0 auto;
+}

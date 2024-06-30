@@ -1,0 +1,98 @@
+@import '../variables.scss';
+
+
+.card--new .card__link {
+  &::before {
+    content: "NEW";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    top: 27px;
+    right: 27px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 3.5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0);
+    z-index: 1;
+  }
+}
+
+.card__link {
+  position: relative;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: minmax(130px, 207px) 1fr;
+  grid-template-rows: 380px 40px;
+  row-gap: 32px;
+  text-decoration: none;
+
+  &::before {
+    content: none;
+  }
+
+  &:active {
+   opacity: 0.3;
+  }
+
+  &:focus-visible {
+    padding: 2px;
+    border: 2px solid $purple;
+  }
+}
+
+.card__link:hover {
+  opacity: 0.6;
+
+  &::after {
+    content: "Подробнее";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 3.5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.card__image {
+  position: relative;
+  display: block;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.card__name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.card__price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
+  color: rgb(68, 68, 68);
+}

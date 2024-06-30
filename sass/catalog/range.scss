@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+.range__control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  margin-left: -11px;
+}
+
+.range__sliders {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.range__counters {
+  display: flex;
+}
+
+.range__input::-webkit-slider-thumb {
+  appearance: none;
+  pointer-events: all;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: $grey-light;
+  cursor: pointer;
+}
+
+.range__input {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  width: 100%;
+  height: 2px;
+  background-color: $black;
+
+  &--from {
+    height: 0;
+    z-index: 1;
+  }
+
+  &--to {
+    background: linear-gradient(to right, $black 60%, $grey 60%);
+  }
+}
+
+.range__name {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: block;
+
+  &:first-child {
+    margin-right: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
+}
+

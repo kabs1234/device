@@ -1,0 +1,51 @@
+.checkbox__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.checkbox__list__item {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.checkbox__label {
+  position: relative;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-left: 36px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -35px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 3px;
+  background: none;
+}
+
+.checkbox__input:checked ~ .checkbox__checkmark {
+  border: 2px solid rgb(0, 0, 0);
+  background: url("../../images/decorative/checked.svg") no-repeat center;
+}
