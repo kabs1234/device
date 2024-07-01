@@ -1,32 +1,5 @@
 @import '../variables.scss';
 
-
-.card--new .card__link {
-  &::before {
-    content: "NEW";
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    top: 27px;
-    right: 27px;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 16px;
-    letter-spacing: 3.5px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 2px solid rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    background-color: rgba(196, 196, 196, 0);
-    z-index: 1;
-  }
-}
-
 .card__link {
   position: relative;
   font-family: Rubik;
@@ -44,19 +17,13 @@
     content: none;
   }
 
-  &:active {
-   opacity: 0.3;
-  }
-
   &:focus-visible {
     padding: 2px;
     border: 2px solid $purple;
   }
 }
 
-.card__link:hover {
-  opacity: 0.6;
-
+.card__link:hover .card__image-wrapper {
   &::after {
     content: "Подробнее";
     position: absolute;
@@ -67,18 +34,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 220px;
+    height: 20px;
+    margin: auto;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 3.5px;
     color: rgb(0, 0, 0);
+    background-color: $yellow-light;
     text-align: center;
     text-transform: uppercase;
+    opacity: 1;
   }
 }
 
-.card__image {
+.card__link:hover .card__name,
+.card__link:hover .card__price,
+.card__link:hover .card__image {
+  opacity: 0.6;
+}
+
+.card__link:active .card__image-wrapper {
+  &::after {
+    background-color: $yellow-hover;
+  }
+}
+
+.card__link:active .card__name,
+.card__link:active .card__price,
+.card__link:hover .card__image {
+  opacity: 0.3;
+}
+
+.card--new .card__image-wrapper {
+  &::before {
+    content: "NEW";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    top: 27px;
+    right: 27px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 3.5px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
+.card__image-wrapper {
   position: relative;
   display: block;
   grid-column: 1/3;

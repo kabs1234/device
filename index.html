@@ -7,7 +7,6 @@
   </head>
   <body class="page-body">
     <header class="header header--grid">
-
       <svg class="header__logo" width="145.000305" height="36.000023" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs/>
         <path id="Vector" d="M27.21 0L27.21 35.3L19.61 35.3L19.61 32.9C17.91 34.8 15.51 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.39 12.1 9.39C15.51 9.39 18.01 10.6 19.61 12.5L19.61 0L27.21 0ZM19.61 22.7C19.61 18.9 17.11 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.11 28.8 19.61 26.5 19.61 22.7Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
@@ -27,18 +26,23 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
 
-        <ul class="user-list">
-          <li class="user-list__item">
-            <a href="#login" class="user-list__link">Войти</a>
-          </li>
-          <li class="user-list__item">
-            <a href="#compare" class="user-list__link">Сравнить</a>
-          </li>
-          <li class="user-list__item">
-            <span class="user-list__goods-quantity">2</span>
-            <button class="user-list__button">Корзина</button>
-          </li>
-        </ul>
+          <div class="user-nav__wrapper">
+            <div class="user-nav__logged-in user-nav__logged-in--hidden">
+              <span class="user-nav__username">Коля Петухов</span>
+              <button class="user-nav__logout">Выйти</button>
+            </div>
+
+            <div class="user-nav__login user-nav__login--active">
+              <a href="#login" class="user-list__login-button">Войти</a>
+            </div>
+
+            <a href="#compare" class="user-list__compare">Сравнить</a>
+
+            <div class="user-nav__basket basket">
+              <span class="basket__goods-quantity">2</span>
+              <button class="basket__button">Корзина</button>
+            </div>
+          </div>
       </nav>
 
       <nav class="header__nav header__nav--grid">
@@ -78,7 +82,7 @@
           <p class="product__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
           <div class="product__wrapper">
-            <a href="#product1" class="product__link">Подробнее</a>
+            <a href="#product1" class="product__link button">Подробнее</a>
 
             <ol class="slider-thumbs">
               <li class="slider-thumbs__item slider-thumbs__item--active">
@@ -134,7 +138,7 @@
             <a href="#fitness-braclets" class="goods-list__link">
               <img src="./images/content/goods-4.svg" alt="Фитнес-браслеты">
             </a>
-            <span class="goods-list__name">Фитнес-браслеты</span>
+            <span class="goods-list__name">Фитнес&#8203;-&#8203;браслеты</span>
           </li>
           <li class="goods-list__item">
             <a href="#smart-watches" class="goods-list__link">
@@ -193,7 +197,7 @@
             </li>
           </ul>
 
-          <a href="#more-about-us" class="about-us__link">Подробнее о нас</a>
+          <a href="#more-about-us" class="about-us__link button">Подробнее&nbsp;о&nbsp;нас</a>
         </section>
 
         <section class="contacts">
@@ -210,7 +214,7 @@
             сб—вс: с 10:00 до 19:00
           </p>
 
-          <a href="#write-us" class="contacts__link">Напишите нам</a>
+          <a href="#write-us" class="contacts__link button">Напишите нам</a>
         </section>
       </section>
 

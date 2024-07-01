@@ -33,9 +33,12 @@
 }
 
 .goods-list__name {
+  display: block;
+  height: 60px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  letter-spacing: -0.5px;
   color: rgb(0, 0, 0);
 }

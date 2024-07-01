@@ -32,7 +32,9 @@
 }
 
 .user-nav__logged-in {
-  display: none;
+  &--hidden {
+    display: none;
+  }
 
   &--active {
     display: block;
@@ -57,19 +59,23 @@
   opacity: 0.3;
 }
 
+.user-list__login-button {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
 .user-nav__login {
-  display: block;
+  &--active {
+    display: block;
+    margin-right: auto;
+  }
 
   &--hidden {
     display: none;
-  }
-}
-
-.user-list__item {
-  position: relative;
-
-  &:nth-child(2) {
-    margin-right: 62px;
   }
 }
 
