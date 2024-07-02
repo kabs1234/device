@@ -38,4 +38,27 @@
 .breadcrumbs-list__link {
   color: $black;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    padding: 2px;
+    border: 2px solid $purple;
+  }
+}
+
+.breadcrumbs-list__item--active .breadcrumbs-list__link {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }

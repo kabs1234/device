@@ -11,11 +11,24 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  margin-left: 36px;
+  padding-left: 36px;
   cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    padding: 2px;
+    border: 2px solid $purple;
   }
 }
 
@@ -33,7 +46,7 @@
   width: 20px;
   height: 20px;
   top: 0;
-  left: -36px;
+  left: 0px;
   border: 2px solid rgb(204, 204, 204);
   border-radius: 50%;
 
