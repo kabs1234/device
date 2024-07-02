@@ -1,11 +1,23 @@
 @import '../variables.scss';
 
+.radio__legend {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
 .radio__label {
   position: relative;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 20px;
   color: rgb(0, 0, 0);
   display: block;
   -webkit-user-select: none;
@@ -27,9 +39,14 @@
   }
 
   &:focus-visible {
-    padding: 2px;
-    border: 2px solid $purple;
+    outline-offset: 2px;
+    outline: 2px solid $purple;
   }
+}
+
+.radio__input:focus-visible ~ .radio__checkmark {
+  outline-offset: 2px;
+  outline: 2px solid $purple;
 }
 
 .radio__input {

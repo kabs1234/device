@@ -6,10 +6,37 @@
   list-style-type: none;
 }
 
+.checkbox__legend {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
 .checkbox__list__item {
   &:not(:last-child) {
     margin-bottom: 17px;
   }
+}
+
+.checkbox__label {
+  position: relative;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  display: block;
+  padding-left: 36px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -21,27 +48,17 @@
 }
 
 
-.checkbox__label {
-  position: relative;
-  font-family: Rubik;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  color: rgb(0, 0, 0);
-  display: block;
-  padding-left: 36px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-
 .checkbox__input {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
   cursor: pointer;
+}
+
+.checkbox__input:focus-visible ~ .checkbox__checkmark {
+  outline-offset: 2px;
+  outline: 2px solid $purple;
 }
 
 .checkbox__checkmark {
@@ -66,6 +83,6 @@
 }
 
 .checkbox__input:focus-visible .checkbox__checkmark {
-  padding: 2px;
+  outline-offset: 2px;
   outline: 2px solid $purple;
 }

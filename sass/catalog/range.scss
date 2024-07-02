@@ -1,5 +1,24 @@
 @import '../variables.scss';
 
+.range {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 38px;
+}
+
+.range__legend {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 26px;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
 .range__control {
   position: relative;
   display: flex;
@@ -26,6 +45,15 @@
   border-radius: 50%;
   background-color: $grey-light;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid $grey;
+  }
+
+  &:active {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: $black;
+  }
 }
 
 .range__input {
@@ -47,21 +75,30 @@
   }
 }
 
+.range__input:focus-visible {
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0 2px $white, 0px 0px 0 4px $purple;
+  }
+}
+
 .range__name {
   font-family: Rubik;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   color: rgb(0, 0, 0);
-  text-align: center;
   display: block;
+  text-align: center;
+  opacity: 0.3;
 
   &:first-child {
     margin-right: auto;
   }
 
   &:last-child {
-    margin-right: auto;
+    margin-right: 53px;
   }
 }
 
