@@ -13,7 +13,9 @@
   &::before {
     content: '01';
     position: absolute;
-    top: 64px;
+    width: 250px;
+    height: 135px;
+    top: 66px;
     right: 48px;
     font-family: Rubik;
     font-size: 180px;
@@ -22,6 +24,7 @@
     color: rgb(255, 255, 255);
     text-align: right;
   }
+
 }
 
 .product__slogan {
@@ -63,6 +66,11 @@
 
 .product__info {
   position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
 
 .product__wrapper {

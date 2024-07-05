@@ -7,7 +7,7 @@
   font-weight: 400;
   src:
     local("Rubik"),
-    url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+    url("../fonts/rubik/rubik-400.woff2") format("woff2")
 }
 
 @font-face {
@@ -17,7 +17,7 @@
   font-weight: 700;
   src:
     local("Rubik"),
-    url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+    url("../fonts/rubik/rubik-700.woff2") format("woff2")
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 800;
   src:
     local("Raleway"),
-    url("../fonts/raleway/raleway-800.woff2") format("woff2"),
+    url("../fonts/raleway/raleway-800.woff2") format("woff2")
 }
 
 *, *::after, *::before {
@@ -59,7 +59,6 @@ body {
 
 .button {
   position: relative;
-  height: 40px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
@@ -85,6 +84,7 @@ body {
   }
 
   &:focus-visible {
+    outline-offset: 2px;
     outline: 2px solid $purple;
   }
 
@@ -107,4 +107,8 @@ body {
   &::before {
     content: none;
   }
+}
+
+.disabled {
+  opacity: 0.3;
 }

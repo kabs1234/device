@@ -15,26 +15,17 @@
 }
 
 .user-nav__wrapper {
-  position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 12px;
-    top: 9px;
-    left: -27px;
-    background: url("../../images/decorative/cabinet.svg") no-repeat;
-  }
 }
 
-.user-nav__logged-in {
-  &--hidden {
-    display: none;
-  }
+.user-nav__login-button, .user-nav__link {
+  padding-left: 27px;
+  background: url("../../images/decorative/cabinet.svg") no-repeat 0px center;
+}
+
+.user-nav__logged-in, .user-nav__login {
+  display: none;
 
   &--active {
     display: block;
@@ -59,13 +50,26 @@
   opacity: 0.3;
 }
 
-.user-list__login-button {
+.user-nav__login-button {
   font-family: Rubik;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: rgb(0, 0, 0);
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
 }
 
 .user-nav__login {
@@ -73,22 +77,25 @@
     display: block;
     margin-right: auto;
   }
-
-  &--hidden {
-    display: none;
-  }
 }
 
-.user-list__compare {
+.user-nav__compare {
   position: relative;
+  padding-left: 22px;
+  color: #000;
+  text-decoration: none;
+  background: url("../../images/decorative/compare.svg") 0 center no-repeat;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 12px;
-    top: 9px;
-    left: -21px;
-    background: url("../../images/decorative/compare.svg") no-repeat;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
   }
 }

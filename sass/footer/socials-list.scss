@@ -1,3 +1,6 @@
+@import "../_variables.scss";
+
+
 .socials-list {
   display: flex;
   margin: 0 auto;
@@ -6,7 +9,11 @@
   list-style-type: none;
 }
 
-.socials-list__item {
+.socials-list__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.socials-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +21,18 @@
   height: 40px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-}
 
-.socials-list__item:not(:last-child) {
-  margin-right: 15px;
+  &:hover {
+    background-color: $yellow-hover;
+  }
+
+  &:active {
+    background-color: $yellow-hover;
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
 }

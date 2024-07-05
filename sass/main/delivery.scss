@@ -1,17 +1,9 @@
 @import "../_variables.scss";
 
-.delievery {
-  width: 1160px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 520px 532px;
-  column-gap: 108px;
-  margin-bottom: 74px;
-}
-
-.delievery__heading {
+.main__delivery-button {
   position: relative;
-  grid-column: 1/3;
+  display: block;
+  width: 1160px;
   font-family: Raleway;
   font-size: 20px;
   font-weight: 800;
@@ -20,10 +12,20 @@
   color: rgb(0, 0, 0);
   margin: 0;
   margin-bottom: 70px;
-  padding: 40px 0;
+  padding: 38.5px 0;
+  border: none;
   background-color: rgb(240, 240, 240);
   text-transform: uppercase;
   text-align: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
 
   &::before {
     content: "";
@@ -32,7 +34,7 @@
     height: 100px;
     left: 0;
     top: 0;
-    background: $yellow-light url("../../images/decorative/delievery.svg") no-repeat center;
+    background: $yellow-light url("../../images/decorative/delivery.svg") no-repeat center;
   }
 
   &::after {
@@ -50,5 +52,15 @@
     border-radius: 50%;
     text-transform: lowercase;
     opacity: 0.3;
+  }
+}
+
+.main__delivery-button:hover {
+  &::before {
+    background-color: $yellow-hover;
+  }
+
+  &::after {
+    opacity: 1;
   }
 }
