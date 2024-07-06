@@ -415,5 +415,53 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container--active">
+      <div class="modal modal--delievery modal--active">
+        <div class="modal__wrapper">
+          <p class="modal__heading">Доставка под заказ</p>
+          <button class="modal__close-button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+        </div>
+
+        <form action="" class="modal__form delivery-form">
+          <div class="delivery-form__label-wrapper">
+            <label class="delivery-form__label delivery-form__label--name"> Ваше имя:
+              <input type="text" name="name" class="delivery-form__input delivery-form__input--name" placeholder="Введите имя">
+              <span class="delivery-form__input-state">Добавьте имя</span>
+            </label>
+
+            <label class="delivery-form__label delivery-form__label--email"> Ваш e-mail:
+              <input type="email" name="email" class="delivery-form__input delivery-form__input--email" placeholder="Введите почту" required>
+              <span class="delivery-form__input-state">Забавный у вас адрес</span>
+            </label>
+
+            <label class="delivery-form__label delivery-form__label--product"> Что нужно привезти:
+              <input type="text" name="product" class="delivery-form__input delivery-form__input--product" placeholder="В свободной форме">
+            </label>
+
+            <label class="delivery-form__label delivery-form__label--quantity"> Количество:
+              <span class="delivery-form__info">
+                <span class="delivery-form__info-text">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+              </span>
+              <div class="delivery-form__input-wrapper">
+                <button class="delivery-form__button delivery-form__button--increase" type="button">
+                  <span class="visually-hidden">Увеличить количество на 1</span>
+                </button>
+                <input type="number" name="quantity" class="delivery-form__input delivery-form__input--quantity" value="1" min="0" max="100">
+                <button class="delivery-form__button delivery-form__button--decrease" type="button">
+                  <span class="visually-hidden">Уменьшить количество на 1</span>
+                </button>
+              </div>
+            </label>
+
+          </div>
+          <button class="delivery-form__send-button button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
