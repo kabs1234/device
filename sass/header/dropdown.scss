@@ -1,0 +1,91 @@
+@import '../variables.scss';
+
+
+.dropdown {
+  margin-right: auto;
+
+  &--active {
+    display: block;
+  }
+}
+
+.dropdown--active .dropdown__list {
+  display: block;
+}
+
+.dropdown--active .dropdown-button::after {
+  width: 16px;
+  height: 2px;
+  top: 23px;
+  background: $black;
+}
+
+.dropdown-button {
+  position: relative;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: $black;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 69px;
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid $purple;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 17px;
+    opacity: 0.3;
+    background: url('../../images/decorative/cross.svg') no-repeat;
+  }
+}
+
+.dropdown-button:hover, .dropdown-button:active {
+  &::before {
+    opacity: 1;
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.dropdown__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dropdown__list__link {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+@import '../variables.scss';
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item {
+  &:nth-child(2) {
+    margin-right: 47px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 52px;
+  }
+}
+
+.nav-list__item--active .nav-list__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  right: 0;
+  background-color: $black;
+}
+
+.nav-list__link {
+  position: relative;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: $black;
+  letter-spacing: 3px;
+  display: block;
+  padding: 13px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $yellow-light, 0 0 0 4px $purple;
+  }
+}
+
+

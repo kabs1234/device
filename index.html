@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Device</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
   </head>
   <body class="page-body">
     <header class="header header--grid">
@@ -42,14 +44,67 @@
             <button class="user-nav__basket basket">
               Корзина
               <span class="basket__goods-quantity">2</span>
+
+              <div class="basket__popover-container">
+                <div class="basket__popover-content basket-popover">
+                  <ul class="basket-popover__list basket-list">
+                    <li class="basket-list__item basket-item">
+                      <img src="" alt="" class="basket-item__image">
+                      <p class="basket-item__name">Любительская селфи-палка</p>
+                      <button class="basket-item__close-button">
+                        <span class="visually-hidden">Убрать товар из корзины</span>
+                      </button>
+                    </li>
+                    <li class="basket__item basket-item">
+                      <img src="" alt="" class="basket-item__image">
+                      <p class="basket-item__name">Профессиональная селфи-палка</p>
+                      <button class="basket-item__close-button">
+                        <span class="visually-hidden">Убрать товар из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="basket-popover__wrapper">
+                    <span class="basket-popover__goods-quantity"></span>
+                    <span class="basket-popover__total-cost"></span>
+                  </div>
+
+                  <button class="basket-popover__close--button">
+                    <span class="visually-hidden">Закрыть корзину</span>
+                  </button>
+
+                  </div>
+                </div>
+              </div>
             </button>
           </div>
       </nav>
 
       <nav class="header__nav header__nav--grid">
         <ul class="nav-list">
-          <li class="nav-list__item">
-            <button class="nav-list__button">Каталог товаров</button>
+          <li class="nav-list__item dropdown">
+            <button class="dropdown-button">Каталог товаров</button>
+
+            <ul class="dropdown__list dropdown-list">
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Виртуальная реальность</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Моноподы для cелфи</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Экшн-камеры</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Фитнес-браслеты</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Умные часы</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown__list__link" href="">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-list__item nav-list__item--active">
             <a href="#delievery" class="nav-list__link">Доставка</a>
@@ -416,8 +471,8 @@
       </div>
     </footer>
 
-    <div class="modal-container modal-container--active">
-      <div class="modal modal--delievery modal--active">
+    <div class="modal-container">
+      <div class="modal modal--delievery">
         <div class="modal__wrapper">
           <p class="modal__heading">Доставка под заказ</p>
           <button class="modal__close-button">
