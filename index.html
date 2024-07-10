@@ -41,42 +41,40 @@
 
             <a href="#compare" class="user-nav__compare">Сравнить</a>
 
-            <button class="user-nav__basket basket">
+            <button class="user-nav__basket-button">
               Корзина
-              <span class="basket__goods-quantity">2</span>
+              <span class="user-nav__goods-quantity">2</span>
+            </button>
 
-              <div class="basket__popover-container">
-                <div class="basket__popover-content basket-popover">
-                  <ul class="basket-popover__list basket-list">
-                    <li class="basket-list__item basket-item">
-                      <img src="" alt="" class="basket-item__image">
-                      <p class="basket-item__name">Любительская селфи-палка</p>
-                      <button class="basket-item__close-button">
-                        <span class="visually-hidden">Убрать товар из корзины</span>
-                      </button>
-                    </li>
-                    <li class="basket__item basket-item">
-                      <img src="" alt="" class="basket-item__image">
-                      <p class="basket-item__name">Профессиональная селфи-палка</p>
-                      <button class="basket-item__close-button">
-                        <span class="visually-hidden">Убрать товар из корзины</span>
-                      </button>
-                    </li>
-                  </ul>
+            <div class="popover-container basket">
+              <div class="basket__content">
+                <ul class="basket__list basket-list">
+                  <li class="basket-list__item basket-item" tabindex="0">
+                    <img src="./images/content/product-1-small.png" alt="" class="basket-item__image" width="39" height="43">
+                    <p class="basket-item__name">Любительская<br> селфи-палка</p>
+                    <button class="basket-item__close-button">
+                      <span class="visually-hidden">Убрать товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket__item basket-item" tabindex="0">
+                    <img src="./images/content/product-2-small.png" alt="" class="basket-item__image" width="39" height="43">
+                    <p class="basket-item__name">Профессиональная<br> селфи-палка</p>
+                    <button class="basket-item__close-button">
+                      <span class="visually-hidden">Убрать товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
 
-                  <div class="basket-popover__wrapper">
-                    <span class="basket-popover__goods-quantity"></span>
-                    <span class="basket-popover__total-cost"></span>
-                  </div>
+                <div class="basket__wrapper">
+                  <span class="basket__goods-quantity">Товаров: 2</span>
+                  <span class="basket__total-cost">Сумма: 2000 ₽</span>
+                </div>
 
-                  <button class="basket-popover__close--button">
-                    <span class="visually-hidden">Закрыть корзину</span>
-                  </button>
+                <a class="basket__open-button" href="#basket">Открыть корзину</a>
 
-                  </div>
                 </div>
               </div>
-            </button>
+            </div>
           </div>
       </nav>
 

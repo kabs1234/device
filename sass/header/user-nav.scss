@@ -99,3 +99,59 @@
     outline: 2px solid rgb(175, 79, 255);
   }
 }
+
+.user-nav__basket-button {
+  position: relative;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  margin-left: 18px;
+  padding: 0;
+  padding-left: 43px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 6px;
+    left: 16px;
+    background: url("../../images/decorative/basket.svg") no-repeat;
+  }
+}
+
+.user-nav__goods-quantity {
+  position: absolute;
+  min-width: 21px;
+  height: 21px;
+  top: 5px;
+  left: 0px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 50%;
+}
