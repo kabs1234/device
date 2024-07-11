@@ -476,8 +476,8 @@
       </div>
     </footer>
 
-    <div class="modal-container">
-      <div class="modal modal--delievery">
+    <div class="modal-container modal modal--active">
+      <div class="modal__content">
         <div class="modal__wrapper">
           <p class="modal__heading">Доставка под заказ</p>
           <button class="modal__close-button">
@@ -486,37 +486,43 @@
         </div>
 
         <form action="" class="modal__form delivery-form">
-          <div class="delivery-form__label-wrapper">
-            <label class="delivery-form__label delivery-form__label--name"> Ваше имя:
+          <div class="delivery-form__form-wrapper">
+
+            <div class="delivery-form__container delivery-form__container--name">
+              <label class="delivery-form__label" for="name">Ваше имя:</label>
               <input type="text" name="name" class="delivery-form__input delivery-form__input--name" placeholder="Введите имя">
               <span class="delivery-form__input-state">Добавьте имя</span>
-            </label>
+            </div>
 
-            <label class="delivery-form__label delivery-form__label--email"> Ваш e-mail:
-              <input type="email" name="email" class="delivery-form__input delivery-form__input--email" placeholder="Введите почту" required>
+            <div class="delivery-form__container delivery-form__container--email">
+              <label class="delivery-form__label" for="email">Ваш e-mail:</label>
+              <input class="delivery-form__input delivery-form__input--email" type="email" name="email"  placeholder="Введите почту" required>
               <span class="delivery-form__input-state">Забавный у вас адрес</span>
-            </label>
+            </div>
 
-            <label class="delivery-form__label delivery-form__label--product"> Что нужно привезти:
-              <input type="text" name="product" class="delivery-form__input delivery-form__input--product" placeholder="В свободной форме">
-            </label>
+            <div class="delivery-form__container delivery-form__container--product">
+              <label class="delivery-form__label" for="product">Что нужно привезти:</label>
+                <input class="delivery-form__input delivery-form__input--product" type="text" name="product"  placeholder="В свободной форме">
+            </div>
 
-            <label class="delivery-form__label delivery-form__label--quantity"> Количество:
+            <div class="delivery-form__container delivery-form__container--quantity">
+              <label class="delivery-form__label" for="quantity">Количество:</label>
               <span class="delivery-form__info">
                 <span class="delivery-form__info-text">
-                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.
                 </span>
               </span>
+
               <div class="delivery-form__input-wrapper">
                 <button class="delivery-form__button delivery-form__button--increase" type="button">
                   <span class="visually-hidden">Увеличить количество на 1</span>
                 </button>
-                <input type="number" name="quantity" class="delivery-form__input delivery-form__input--quantity" value="1" min="0" max="100">
+                <input class="delivery-form__input delivery-form__input--quantity" type="number" name="quantity"  value="1" min="0" max="100">
                 <button class="delivery-form__button delivery-form__button--decrease" type="button">
                   <span class="visually-hidden">Уменьшить количество на 1</span>
                 </button>
               </div>
-            </label>
+            </div>
 
           </div>
           <button class="delivery-form__send-button button">Отправить</button>

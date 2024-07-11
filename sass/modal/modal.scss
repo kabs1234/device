@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-.modal-container {
+.modal {
   display: none;
   position: fixed;
   top: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-.modal {
+.modal__content {
   position: fixed;
   width: 920px;
   height: 568px;
