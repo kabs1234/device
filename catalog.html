@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Catalog</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
   </head>
   <body class="page-body">
     <header class="header header--grid header--catalog">
@@ -283,8 +285,8 @@
             <div class="catalog-product__pagination pagination">
               <a href="#prev" class="pagination__button pagination__button--previous">Назад</a>
               <ol class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#catalog-page-1" class="pagination__link pagination__link--active">1</a>
+                <li class="pagination__item pagination__item--active">
+                  <a href="#catalog-page-1" class="pagination__link">1</a>
                 </li>
                 <li class="pagination__item">
                   <a href="#catalog-page-2" class="pagination__link">2</a>
@@ -385,5 +387,59 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal">
+      <div class="modal__content">
+        <div class="modal__wrapper">
+          <p class="modal__heading">Доставка под заказ</p>
+          <button class="modal__close-button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+        </div>
+
+        <form action="" class="modal__form delivery-form">
+          <div class="delivery-form__form-wrapper">
+
+            <div class="delivery-form__container delivery-form__container--name">
+              <label class="delivery-form__label" for="name">Ваше имя:</label>
+              <input type="text" name="name" class="delivery-form__input delivery-form__input--name" placeholder="Введите имя">
+              <span class="delivery-form__input-state">Добавьте имя</span>
+            </div>
+
+            <div class="delivery-form__container delivery-form__container--email">
+              <label class="delivery-form__label" for="email">Ваш e-mail:</label>
+              <input class="delivery-form__input delivery-form__input--email" type="email" name="email"  placeholder="Введите почту" required>
+              <span class="delivery-form__input-state">Забавный у вас адрес</span>
+            </div>
+
+            <div class="delivery-form__container delivery-form__container--product">
+              <label class="delivery-form__label" for="product">Что нужно привезти:</label>
+                <input class="delivery-form__input delivery-form__input--product" type="text" name="product"  placeholder="В свободной форме">
+            </div>
+
+            <div class="delivery-form__container delivery-form__container--quantity">
+              <label class="delivery-form__label" for="quantity">Количество:</label>
+              <span class="delivery-form__info">
+                <span class="delivery-form__info-text">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.
+                </span>
+              </span>
+
+              <div class="delivery-form__input-wrapper">
+                <button class="delivery-form__button delivery-form__button--increase" type="button">
+                  <span class="visually-hidden">Увеличить количество на 1</span>
+                </button>
+                <input class="delivery-form__input delivery-form__input--quantity" type="number" name="quantity"  value="1" min="0" max="100">
+                <button class="delivery-form__button delivery-form__button--decrease" type="button">
+                  <span class="visually-hidden">Уменьшить количество на 1</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <button class="delivery-form__send-button button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -43,7 +43,7 @@
     line-height: 21px;
     letter-spacing: 3.5px;
     color: rgb(0, 0, 0);
-    background-color: $yellow-light;
+    background: linear-gradient(transparent 3px,$yellow-light 3px,$yellow-light 11px, transparent 11px);
     text-align: center;
     text-transform: uppercase;
     opacity: 1;
@@ -58,7 +58,7 @@
 
 .card__link:active .card__image-wrapper {
   &::after {
-    background-color: $yellow-hover;
+    background: linear-gradient(transparent 3px,$yellow-hover 3px,$yellow-hover 11px, transparent 11px);
   }
 }
 
