@@ -36,6 +36,9 @@
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Rubik';
   font-size: 18px;
   font-weight: 400;

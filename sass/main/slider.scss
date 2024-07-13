@@ -61,6 +61,11 @@
   background-color: $black;
 }
 
+.slider-thumbs__item:has(.slider-thumbs__button:focus-visible) {
+  outline-offset: 2px;
+  outline: 2px solid rgb(175, 79, 255);
+}
+
 .slider-thumbs__button {
   display: block;
   width: 12px;
@@ -78,8 +83,7 @@
     opacity: 0.3;
   }
 
-  &:focus-visible {
-    outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+  &:disabled {
+    opacity: 0.1;
   }
 }

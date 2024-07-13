@@ -11,7 +11,7 @@
   position: relative;
   width: 1160px;
   display: grid;
-  grid-template-columns: 287px 448px;
+  grid-template-columns: 287px 475px;
   column-gap: 116px;
   margin: 0 auto;
   padding-bottom: 72px;
@@ -28,17 +28,6 @@
     top: 0px;
     bottom: 0;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 136px;
-    height: 164px;
-    right: 63px;
-    top: 78px;
-    background: url("../../images/decorative/mailman.svg") no-repeat;
-  }
-
 }
 
 .features__list {
@@ -79,7 +68,52 @@
 
 }
 
-.features__name {
+.feature {
+  position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.feature--delivery {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 164px;
+    top: 78px;
+    right: -219px;
+    background: url("../../images/decorative/mailman.svg") no-repeat;
+  }
+}
+
+.feature--warranty {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 171px;
+    height: 195px;
+    top: 78px;
+    right: -219px;
+    background: url("../../images/decorative/warranty.svg") no-repeat;
+  }
+}
+
+.feature--credit {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 156px;
+    height: 188px;
+    top: 78px;
+    right: -219px;
+    background: url("../../images/decorative/credit.svg") no-repeat;
+  }
+}
+
+.feature__name {
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
@@ -90,7 +124,7 @@
   margin-bottom: 34px;
 }
 
-.features__description {
+.feature__description {
   margin: 0;
   margin-bottom: 73px;
 }

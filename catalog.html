@@ -8,7 +8,6 @@
   <body class="page-body">
     <header class="header header--grid header--catalog">
       <svg class="header__logo" width="145.000305" height="36.000023" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs/>
         <path id="Vector" d="M27.21 0L27.21 35.3L19.61 35.3L19.61 32.9C17.91 34.8 15.51 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.39 12.1 9.39C15.51 9.39 18.01 10.6 19.61 12.5L19.61 0L27.21 0ZM19.61 22.7C19.61 18.9 17.11 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.11 28.8 19.61 26.5 19.61 22.7Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
         <path id="Vector" d="M43.72 29.19C45.83 29.19 47.53 28.39 48.53 27.29L54.63 30.79C52.13 34.19 48.43 35.99 43.62 35.99C35.02 35.99 29.62 30.19 29.62 22.69C29.62 15.19 35.02 9.39 43.02 9.39C50.43 9.39 55.83 15.09 55.83 22.69C55.83 23.79 55.73 24.79 55.53 25.69L37.62 25.69C38.62 28.29 40.92 29.19 43.72 29.19ZM48.33 20.09C47.53 17.19 45.23 16.09 42.92 16.09C40.02 16.09 38.12 17.49 37.42 20.09L48.33 20.09Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
         <path id="Vector" d="M82.15 10.1L72.84 35.3L64.24 35.3L54.93 10.1L63.34 10.1L68.64 26.1L73.95 10.1C73.95 10.1 82.15 10.1 82.15 10.1Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
@@ -28,38 +27,98 @@
 
           <div class="user-nav__wrapper">
             <div class="user-nav__logged-in user-nav__logged-in--active">
-              <span class="user-nav__username">Коля Петухов</span>
+              <a href="#" class="user-nav__link">
+                <span class="user-nav__username">Коля Петухов</span>
+              </a>
               <button class="user-nav__logout">Выйти</button>
             </div>
 
-            <div class="user-nav__login user-nav__login--hidden">
-              <a href="#login" class="user-list__login">Войти</a>
+            <div class="user-nav__login">
+              <a href="#login" class="user-nav__login-button">Войти</a>
             </div>
 
-            <a href="#compare" class="user-list__compare">Сравнить</a>
+            <a href="#compare" class="user-nav__compare">Сравнить</a>
 
-            <div class="user-nav__basket basket">
-              <span class="basket__goods-quantity">2</span>
-              <button class="basket__button">Корзина</button>
+            <button class="user-nav__basket-button">
+              Корзина
+              <span class="user-nav__goods-quantity">2</span>
+            </button>
+
+            <div class="popover-container basket">
+              <div class="basket__content">
+                <ul class="basket__list basket-list">
+                  <li class="basket-list__item basket-item" tabindex="0">
+                    <img src="./images/content/product-1-small.png" alt="" class="basket-item__image" width="39" height="43">
+                    <p class="basket-item__name">Любительская<br> селфи-палка</p>
+                    <button class="basket-item__close-button">
+                      <span class="visually-hidden">Убрать товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket__item basket-item" tabindex="0">
+                    <img src="./images/content/product-2-small.png" alt="" class="basket-item__image" width="39" height="43">
+                    <p class="basket-item__name">Профессиональная<br> селфи-палка</p>
+                    <button class="basket-item__close-button">
+                      <span class="visually-hidden">Убрать товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="basket__wrapper">
+                  <span class="basket__goods-quantity">Товаров: 2</span>
+                  <span class="basket__total-cost">Сумма: 2000 ₽</span>
+                </div>
+
+                <a class="basket__open-button" href="#basket">Открыть корзину</a>
+
+                </div>
+              </div>
             </div>
           </div>
       </nav>
 
       <nav class="header__nav header__nav--grid">
         <ul class="nav-list">
-          <li class="nav-list__item">
-            <button class="nav-list__button">Каталог товаров</button>
-          </li>
-          <li class="nav-list__item">
-            <a href="#delievery" class="nav-list__link">Доставка</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#warranty" class="nav-list__link">Гарантия</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#contacts" class="nav-list__link">Контакты</a>
-          </li>
-        </ul>
+          <li class="nav-list__item dropdown">
+            <button class="dropdown-button">Каталог товаров</button>
+
+            <div class="dropdown__wrapper">
+              <ul class="dropdown__list dropdown-list">
+                <li class="dropdown-list__item dropdown-list__item--active">
+                  <a class="dropdown-list__link" href="">Виртуальная реальность</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a class="dropdown-list__link" href="">Моноподы для cелфи</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a class="dropdown-list__link" href="">Экшн-камеры</a>
+                </li>
+                </li>
+              </ul>
+              <ul class="dropdown__list dropdown-list">
+                <li class="dropdown-list__item">
+                  <a class="dropdown-list__link" href="">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a class="dropdown-list__link" href="">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="dropdown__list dropdown-list">
+                <li class="dropdown-list__item">
+                  <a class="dropdown-list__link" href="">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list__item nav-list__item--active">
+              <a href="#delievery" class="nav-list__link">Доставка</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#warranty" class="nav-list__link">Гарантия</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#contacts" class="nav-list__link">Контакты</a>
+            </li>
+          </ul>
+            </div>
       </nav>
     </header>
 
@@ -89,16 +148,20 @@
               <fieldset class="filter__range range">
                 <legend class="range__legend">Стоимость</legend>
 
-                <div class="range__control">
-                  <div class="range__sliders">
-                    <input type="range" class="range__input range__input--from" name="price-from" value="0" min="0" max="10000" step="100">
-                    <input type="range" class="range__input range__input--to" name="price-to" value="5000" min="0" max="8000" step="100">
+                <div class="range__slider" style="background: linear-gradient(to right, #000 120px, rgb(220, 220, 220) 121px);">
+                  <div class="range__slider-bar">
+                    <button class="range__button" type="button" style="margin-right: 102px;">
+                      <span class="visually-hidden">Ручка минимальной цены</span>
+                    </button>
+                    <button class="range__button" type="button">
+                      <span class="visually-hidden">Ручка максимальной цены</span>
+                    </button>
                   </div>
+                </div>
 
-                  <div class="range__counters">
-                    <span class="range__name">от 0</span>
-                    <span class="range__name">до 5000</span>
-                  </div>
+                <div class="range__counters">
+                  <span class="range__name">от 0</span>
+                  <span class="range__name">до 5000</span>
                 </div>
               </fieldset>
 

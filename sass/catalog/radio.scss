@@ -44,9 +44,8 @@
   }
 }
 
-.radio__input:focus-visible ~ .radio__checkmark {
-  outline-offset: 2px;
-  outline: 2px solid $purple;
+.radio__input:focus-visible ~ .radio__checkmark::after {
+  opacity: 1;
 }
 
 .radio__input {
@@ -77,6 +76,16 @@
     width: 8px;
     background-color: $black;
     border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    outline-offset: 4px;
+    outline: 2px solid $purple;
+    opacity: 0;
   }
 }
 

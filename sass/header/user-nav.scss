@@ -9,7 +9,7 @@
   color: $black;
   display: grid;
   grid-template-columns: 519px 494px;
-  column-gap: 26px;
+  column-gap: 24px;
   align-items: center;
   margin: 0 60px;
 }
@@ -33,9 +33,33 @@
   }
 }
 
+.user-nav__link {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 28px;
+  padding: 4px 0px;
+  padding-left: 24px;
+
+  &:hover {
+    opacity: 0.2;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
+}
+
 .user-nav__username {
   display: inline-block;
-  margin-right: 28px;
 }
 
 .user-nav__logout {
@@ -48,6 +72,20 @@
   border: none;
   background-color: transparent;
   opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.2;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid rgb(175, 79, 255);
+  }
 }
 
 .user-nav__login-button {
@@ -109,7 +147,7 @@
   color: rgb(0, 0, 0);
   margin-left: 18px;
   padding: 0;
-  padding-left: 43px;
+  padding-left: 40px;
   border: none;
   background-color: transparent;
   text-decoration: none;

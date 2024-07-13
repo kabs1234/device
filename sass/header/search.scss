@@ -25,12 +25,17 @@
   }
 
   &:focus-within {
-    outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: none;
   }
 }
 
+.search__bar-wrapper:has(.search-bar:focus-within) {
+  outline: 2px solid $purple;
+  outline-offset: 2px;
+}
+
 .search__bar-wrapper {
+  position: relative;
   display: inline;
 
   &::before {
@@ -45,6 +50,7 @@
 }
 
 .search-button {
+  position: relative;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
@@ -67,9 +73,23 @@
     color: rgba($color: $white, $alpha: 0.3);
   }
 
-  &:focus-visible {
-    outline-offset: 2px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    outline-offset: 4px;
     outline: 2px solid rgb(175, 79, 255);
+    opacity: 0;
   }
 }
 
+.search-button:focus-visible {
+  outline: none;
+
+  &::before {
+    opacity: 1;
+  }
+}

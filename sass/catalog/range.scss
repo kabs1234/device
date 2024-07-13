@@ -19,68 +19,61 @@
   border-top: 2px solid rgb(0, 0, 0);
 }
 
-.range__control {
-  position: relative;
+.range__slider {
+  height: 2px;
+  margin-left: -10px;
+  background-color: $black;
+  z-index: -1;
+}
+
+.range__slider-bar {
   display: flex;
-  flex-direction: column;
-  width: 210px;
-  margin-left: -11px;
+  align-items: center;
+  height: 100%;
 }
 
-.range__sliders {
+.range__button {
   position: relative;
-  margin-bottom: 13px;
-}
-
-.range__counters {
-  display: flex;
-}
-
-.range__input::-webkit-slider-thumb {
-  appearance: none;
-  pointer-events: all;
   width: 18px;
   height: 18px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   background-color: $grey-light;
-  cursor: pointer;
+  z-index: 1;
 
   &:hover {
-    border: 2px solid $grey;
+    background-color: rgb(200, 200, 200);
   }
 
   &:active {
-    border: 2px solid rgb(0, 0, 0);
+    opacity: 1;
     background-color: $black;
   }
-}
 
-.range__input {
-  position: absolute;
-  -webkit-appearance: none;
-  appearance: none;
-  pointer-events: none;
-  width: 100%;
-  height: 2px;
-  background-color: $black;
-
-  &--from {
-    height: 0;
-    z-index: 1;
-  }
-
-  &--to {
-    background: linear-gradient(to right, $black 60%, $grey 60%);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -2px;
+    right: -2px;
+    outline: 2px solid $purple;
+    outline-offset: 2px;
+    opacity: 0;
   }
 }
 
-.range__input:focus-visible {
+.range__button:focus-visible {
   outline: none;
 
-  &::-webkit-slider-thumb {
-    box-shadow: 0px 0px 0 2px $white, 0px 0px 0 4px $purple;
+  &::before {
+    opacity: 1;
   }
+}
+
+.range__counters {
+  display: flex;
+  margin-top: 13px;
 }
 
 .range__name {

@@ -56,9 +56,8 @@
   cursor: pointer;
 }
 
-.checkbox__input:focus-visible ~ .checkbox__checkmark {
-  outline-offset: 2px;
-  outline: 2px solid $purple;
+.checkbox__input:focus-visible ~ .checkbox__checkmark::before {
+  opacity: 1;
 }
 
 .checkbox__checkmark {
@@ -71,6 +70,16 @@
   border: 2px solid rgb(204, 204, 204);
   border-radius: 3px;
   background: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    outline-offset: 4px;
+    outline: 2px solid $purple;
+    opacity: 0;
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__checkmark {

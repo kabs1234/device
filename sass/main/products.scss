@@ -6,25 +6,24 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  margin-bottom: 70px;
   margin-top: -1px;
-  padding-top: 107px;
-  background: linear-gradient(180deg, $yellow-light 134px, #fff 135px);
+  margin-bottom: 70px;
+  padding-top: 103px;
+  background: linear-gradient(180deg, $yellow-light 130px, #fff 131px);
+}
 
-  &::before {
-    content: '01';
-    position: absolute;
-    width: 250px;
-    height: 135px;
-    top: 66px;
-    right: 48px;
-    font-family: Rubik;
-    font-size: 180px;
-    font-weight: 700;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    text-align: right;
-  }
+.product__number {
+  position: absolute;
+  width: 250px;
+  height: 135px;
+  top: 61px;
+  right: 48px;
+  font-family: Rubik;
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  text-align: right;
 }
 
 .product__slogan {
