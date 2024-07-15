@@ -11,12 +11,12 @@
   width: 100%;
   margin-bottom: 26px;
   padding-top: 12px;
-  border-top: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid $black;
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: $black;
 }
 
 .range__slider {
@@ -36,7 +36,7 @@
   position: relative;
   width: 18px;
   height: 18px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid $black;
   border-radius: 50%;
   background-color: $grey-light;
   z-index: 1;
@@ -83,7 +83,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-align: center;
   opacity: 0.3;
 

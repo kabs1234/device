@@ -10,7 +10,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-decoration: none;
 
   &::before {
@@ -43,7 +43,7 @@
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 3.5px;
-    color: rgb(0, 0, 0);
+    color: $black;
     text-align: center;
     text-transform: uppercase;
     opacity: 1;
@@ -110,5 +110,5 @@
   grid-column: 2/3;
   grid-row: 2/3;
   justify-self: end;
-  color: rgb(68, 68, 68);
+  color: $dark;
 }

@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   margin-top: auto;
-  background-color: rgb(68, 68, 68);
+  background-color: $dark;
 }
 
 .footer__background-wrapper {
@@ -42,7 +42,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgb(255, 255, 255);
+  color: $white;
 }
 
 .footer-list__item:not(:last-child) {
@@ -62,7 +62,7 @@
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.5px;
-  color: rgb(255, 255, 255);
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -79,7 +79,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -91,7 +91,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: rgb(255, 255, 255);
+  color: $white;
   text-decoration: underline;
 
   &:hover {
@@ -105,7 +105,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -124,5 +124,5 @@
 
 .footer__copyright:focus-visible {
   outline-offset: 2px;
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid $purple;
 }

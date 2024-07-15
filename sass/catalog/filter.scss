@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .filter-section {
   grid-column: 1/2;
   margin-left: 60px;
@@ -12,7 +14,7 @@
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 3.5px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-transform: uppercase;
 }
 

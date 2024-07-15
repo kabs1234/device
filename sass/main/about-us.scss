@@ -20,7 +20,7 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  color: rgb(0, 0, 0);
+  color: $black;
   margin-top: 47px;
   margin-bottom: 48px;
 }
@@ -41,7 +41,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: $black;
 
   &:not(:last-child) {
     margin-bottom: 19px;

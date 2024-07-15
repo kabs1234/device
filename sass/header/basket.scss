@@ -78,7 +78,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgb(255, 255, 255);
+  color: $white;
 }
 
 .basket-item__close-button {
@@ -139,7 +139,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgb(255, 255, 255);
+  color: $white;
 }
 
 .basket__goods-quantity {
@@ -156,7 +156,7 @@
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.5px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;

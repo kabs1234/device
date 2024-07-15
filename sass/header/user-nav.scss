@@ -41,7 +41,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-decoration: none;
 
   &:hover {
@@ -54,7 +54,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -70,7 +70,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: $black;
   opacity: 0.3;
   cursor: pointer;
 
@@ -84,7 +84,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -93,7 +93,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-decoration: none;
 
   &:hover {
@@ -106,7 +106,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -134,7 +134,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 }
 
@@ -149,7 +149,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-decoration: none;
 
   &:hover {
@@ -162,7 +162,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 
   &::before {
@@ -191,5 +191,5 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  color: rgb(0, 0, 0);
+  color: $black;
 }

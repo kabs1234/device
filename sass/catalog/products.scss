@@ -28,15 +28,15 @@
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 3.5px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-transform: uppercase;
 
   &:hover {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid $black;
   }
 
   &:active {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid $black;
     opacity: 0.3;
   }
 

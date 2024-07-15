@@ -29,7 +29,7 @@
 
   &:focus-visible {
     outline-offset: 2px;
-    outline: 2px solid rgb(175, 79, 255);
+    outline: 2px solid $purple;
   }
 
   &--previous {
@@ -62,7 +62,7 @@
 
 .slider-thumbs__item:has(.slider-thumbs__button:focus-visible) {
   outline-offset: 2px;
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid $purple;
 }
 
 .slider-thumbs__button {
@@ -71,7 +71,7 @@
   padding: 0;
   border: 2px solid $black;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   display: block;
 
   &:hover {

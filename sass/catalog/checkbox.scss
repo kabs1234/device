@@ -10,12 +10,12 @@
   width: 100%;
   margin-bottom: 20px;
   padding-top: 12px;
-  border-top: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid $black;
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: $black;
 }
 
 .checkbox__list__item {
@@ -32,7 +32,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: $black;
   cursor: pointer;
   -moz-user-select: none;
   user-select: none;
@@ -82,7 +82,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__checkmark {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid $black;
   background: url("../../images/decorative/checked.svg") no-repeat center;
 }
 

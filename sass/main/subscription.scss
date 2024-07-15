@@ -26,7 +26,7 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  color: rgb(0, 0, 0);
+  color: $black;
 }
 
 .subscription__text {
@@ -48,14 +48,14 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(68, 68, 68);
+  color: $dark;
 
   &::placeholder {
     font-family: Rubik;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: rgb(68, 68, 68);
+    color: $dark;
     opacity: 0.5;
   }
 
@@ -81,16 +81,16 @@
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.5px;
-  color: rgb(0, 0, 0);
+  color: $black;
   text-align: center;
   text-transform: uppercase;
 
   &:hover {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid $black;
   }
 
   &:active {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid $black;
     opacity: 0.3;
   }
 

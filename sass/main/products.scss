@@ -22,7 +22,7 @@
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
-  color: rgb(255, 255, 255);
+  color: $white;
   text-align: right;
 }
 
@@ -52,7 +52,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: $black;
 }
 
 .product__quality {
@@ -60,7 +60,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(68, 68, 68);
+  color: $dark;
 }
 
 .product__info {
