@@ -2,15 +2,15 @@
 
 .card__link {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(130px, 207px) 1fr;
+  grid-template-rows: 380px 40px;
+  row-gap: 32px;
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  display: grid;
-  grid-template-columns: minmax(130px, 207px) 1fr;
-  grid-template-rows: 380px 40px;
-  row-gap: 32px;
   text-decoration: none;
 
   &::before {
@@ -31,19 +31,19 @@
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 220px;
     height: 20px;
     margin: auto;
+    background: linear-gradient(transparent 3px,$yellow-light 3px,$yellow-light 11px, transparent 11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 3.5px;
     color: rgb(0, 0, 0);
-    background: linear-gradient(transparent 3px,$yellow-light 3px,$yellow-light 11px, transparent 11px);
     text-align: center;
     text-transform: uppercase;
     opacity: 1;
@@ -72,22 +72,22 @@
   &::before {
     content: "NEW";
     position: absolute;
+    top: 27px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    top: 27px;
-    right: 27px;
-    color: rgba(0, 0, 0, 0.6);
     font-family: Raleway;
     font-size: 14px;
     font-weight: 800;
     line-height: 16px;
     letter-spacing: 3.5px;
-    border: 2px solid rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    background-color: rgba(196, 196, 196, 0);
+    color: rgba(0, 0, 0, 0.6);
     text-align: center;
     text-transform: uppercase;
     z-index: 1;

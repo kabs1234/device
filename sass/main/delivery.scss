@@ -2,19 +2,19 @@
 
 .main__delivery-button {
   position: relative;
-  display: block;
   width: 1160px;
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 38.5px 0;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  display: block;
   font-family: Raleway;
   font-size: 20px;
   font-weight: 800;
   line-height: 23px;
   letter-spacing: 4px;
   color: rgb(0, 0, 0);
-  margin: 0;
-  margin-bottom: 70px;
-  padding: 38.5px 0;
-  border: none;
-  background-color: rgb(240, 240, 240);
   text-transform: uppercase;
   text-align: center;
 
@@ -30,26 +30,26 @@
   &::before {
     content: "";
     position: absolute;
-    width: 125px;
-    height: 100px;
     left: 0;
     top: 0;
+    width: 125px;
+    height: 100px;
     background: $yellow-light url("../../images/decorative/delivery.svg") no-repeat center;
   }
 
   &::after {
     content: "i";
     position: absolute;
-    width: 40px;
-    height: 40px;
     right: 41px;
     top: 33px;
-    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(220, 220, 220, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(220, 220, 220, 0.5);
-    border-radius: 50%;
+    font-size: 16px;
     text-transform: lowercase;
     opacity: 0.3;
   }

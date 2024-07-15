@@ -1,6 +1,5 @@
 @import "../_variables.scss";
 
-
 .subscription {
   width: 100%;
   background-color: $light;
@@ -14,20 +13,20 @@
 }
 
 .subscription__container {
+  margin-bottom: 144px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 144px;
 }
 
 .subscription__title {
+  margin: 0;
+  margin-right: 252px;
+  margin-left: 7px;
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin: 0;
-  margin-right: 252px;
-  margin-left: 7px;
 }
 
 .subscription__text {
@@ -41,22 +40,22 @@
 
 .sub-form__bar {
   height: 55px;
+  padding: 14px 323px 14px 16px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: transparent;
   font-family: Rubik;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: rgb(68, 68, 68);
-  padding: 14px 323px 14px 16px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid #C4C4C4;
 
   &::placeholder {
-    color: rgb(68, 68, 68);
     font-family: Rubik;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    color: rgb(68, 68, 68);
     opacity: 0.5;
   }
 
@@ -75,14 +74,14 @@
 }
 
 .sub-form__button {
+  padding: 14px 35px;
+  border: 3px solid rgb(206, 206, 206);
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.5px;
   color: rgb(0, 0, 0);
-  padding: 14px 35px;
-  border: 3px solid rgb(206, 206, 206);
   text-align: center;
   text-transform: uppercase;
 
@@ -108,16 +107,16 @@
 
 .sub-form__info {
   position: relative;
-  align-self: center;
   margin-left: auto;
+  align-self: center;
 
   &::before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 14px;
     top: 6px;
     left: -31px;
+    width: 14px;
+    height: 14px;
     background: url('../../images/decorative/checked-green.svg') no-repeat;
   }
 }

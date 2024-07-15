@@ -6,10 +6,10 @@
   &::before {
     content: "";
     position: absolute;
-    width: 84px;
-    height: 7px;
     left: 0px;
     top: 0px;
+    width: 84px;
+    height: 7px;
     background-color: $black;
   }
 }
@@ -36,12 +36,12 @@
 }
 
 .transport-companies__item {
+  margin-left: 21px;
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  margin-left: 21px;
 
   &:not(:last-child) {
     margin-bottom: 19px;

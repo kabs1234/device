@@ -2,21 +2,21 @@
 
 .range {
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
   border: none;
-  margin-bottom: 38px;
 }
 
 .range__legend {
+  width: 100%;
+  margin-bottom: 26px;
+  padding-top: 12px;
+  border-top: 2px solid rgb(0, 0, 0);
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  width: 100%;
-  padding-top: 12px;
-  margin-bottom: 26px;
-  border-top: 2px solid rgb(0, 0, 0);
 }
 
 .range__slider {
@@ -27,9 +27,9 @@
 }
 
 .range__slider-bar {
+  height: 100%;
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 .range__button {
@@ -53,10 +53,10 @@
   &::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
     top: -2px;
     right: -2px;
+    width: 18px;
+    height: 18px;
     outline: 2px solid $purple;
     outline-offset: 2px;
     opacity: 0;
@@ -72,18 +72,18 @@
 }
 
 .range__counters {
-  display: flex;
   margin-left: -10px;
   margin-top: 13px;
+  display: flex;
 }
 
 .range__name {
+  display: block;
   font-family: Rubik;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   color: rgb(0, 0, 0);
-  display: block;
   text-align: center;
   opacity: 0.3;
 

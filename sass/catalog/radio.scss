@@ -1,30 +1,30 @@
 @import '../variables.scss';
 
 .radio__legend {
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  border-top: 2px solid rgb(0, 0, 0);
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  width: 100%;
-  padding-top: 12px;
-  margin-bottom: 20px;
-  border-top: 2px solid rgb(0, 0, 0);
 }
 
 .radio__label {
   position: relative;
+  display: block;
+  padding-left: 36px;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  display: block;
-  -webkit-user-select: none;
+  cursor: pointer;
   -moz-user-select: none;
   user-select: none;
-  padding-left: 36px;
-  cursor: pointer;
+  -webkit-user-select: none;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -52,23 +52,22 @@
   position: absolute;
   width: 0;
   height: 0;
-  opacity: 0;
   cursor: pointer;
+  opacity: 0;
 }
 
 .radio__checkmark {
   position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
   top: 0;
   left: 0px;
+  width: 20px;
+  height: 20px;
   border: 2px solid rgb(204, 204, 204);
   border-radius: 50%;
+  display: block;
 
   &::before {
     content: "";
-    display: none;
     position: absolute;
     top: 4px;
     right: 4px;
@@ -76,6 +75,7 @@
     width: 8px;
     background-color: $black;
     border-radius: 50%;
+    display: none;
   }
 
   &::after {

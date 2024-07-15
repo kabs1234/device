@@ -1,9 +1,9 @@
 @import '../variables.scss';
 
 .header {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
-  position: relative;
   background-color: $yellow-light;
 
   &--grid {

@@ -1,23 +1,22 @@
 @import "../_variables.scss";
 
 .footer {
-  margin-top: auto;
   width: 100%;
+  margin-top: auto;
   background-color: rgb(68, 68, 68);
 }
 
 .footer__background-wrapper {
   width: 1160px;
   margin: 0 auto;
-
   padding-top: 62px;
   padding-bottom: 61px;
 }
 
 .footer__container {
-  display: flex;
   margin-top: 26px;
   margin-bottom: 47px;
+  display: flex;
 }
 
 .footer__wrapper {
@@ -29,21 +28,21 @@
   &::before {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 7px;
     top: 17px;
     left: 1px;
+    width: 80px;
+    height: 7px;
     background-color: $yellow-hover;
   }
 }
 
 .footer__address {
+  margin-right: 117px;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(255, 255, 255);
-  margin-right: 117px;
 }
 
 .footer-list__item:not(:last-child) {
@@ -51,9 +50,9 @@
 }
 
 .footer-list {
-  display: flex;
   margin: 0 auto;
   padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
@@ -85,14 +84,14 @@
 }
 
 .footer__phone {
+  margin-left: auto;
+  align-self: center;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: rgb(255, 255, 255);
-  align-self: center;
-  margin-left: auto;
   text-decoration: underline;
 
   &:hover {

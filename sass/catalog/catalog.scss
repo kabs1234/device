@@ -10,14 +10,14 @@
 }
 
 .catalog__name {
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 14px;
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin: 0;
-  margin-left: 60px;
-  margin-bottom: 14px;
 }
 
 .catalog__container {
@@ -26,9 +26,9 @@
 }
 
 .catalog__inner-container {
+  width: 1160px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 260px 840px;
   column-gap: 60px;
-  width: 1160px;
-  margin: 0 auto;
 }

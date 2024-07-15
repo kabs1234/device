@@ -5,15 +5,15 @@
 }
 
 .search-bar {
+  padding: 8px 116px 8px 43px;
+  border: 2px solid $black;
+  border-radius: 50px 0px 0px 50px;
+  background-color: transparent;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  padding: 8px 116px 8px 43px;
-  border: 2px solid $black;
-  border-radius: 50px 0px 0px 50px;
-  background-color: transparent;
 
   &::placeholder {
     font-family: Rubik;
@@ -41,27 +41,27 @@
   &::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
     top: 12px;
     left: 17px;
+    width: 16px;
+    height: 16px;
     background: url('../../images/decorative/find.svg') no-repeat;
   }
 }
 
 .search-button {
   position: relative;
+  padding: 8px 54px 8.5px;
+  border: 2px solid $black;
+  border-radius: 0px 50px 50px 0px;
+  border-left: 0;
+  background-color: transparent;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(0, 0, 0);
-  padding: 8px 54px 8.5px;
-  border: 2px solid $black;
-  border-radius: 0px 50px 50px 0px;
-  border-left: 0;
   text-align: center;
-  background-color: transparent;
 
   &:hover {
     background-color: $black;

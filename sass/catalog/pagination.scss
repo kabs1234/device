@@ -2,16 +2,16 @@
 
 
 .pagination {
-  display: flex;
-  align-items: center;
   margin: 0 40px;
   background-color: $grey-light;
+  display: flex;
+  align-items: center;
 }
 
 .pagination__list {
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
@@ -34,14 +34,14 @@
 }
 
 .pagination__button {
+  padding: 25px;
+  display: block;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.5px;
   color: rgb(0, 0, 0);
-  display: block;
-  padding: 25px;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -70,24 +70,23 @@
   &--last-page {
     visibility: hidden;
   }
-
 }
 
 .pagination__link {
   position: relative;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(68, 68, 68);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 40px;
-  min-height: 40px;
+  opacity: 0.3;
   text-align: center;
   text-decoration: none;
-  opacity: 0.3;
 
   &:hover {
     opacity: 1;

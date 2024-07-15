@@ -1,11 +1,11 @@
 @import '../variables.scss';
 
 .basket {
-  display: none;
   position: absolute;
   top: 36px;
   right: -60px;
   width: 320px;
+  display: none;
   z-index: 1;
 
   &--active {
@@ -15,10 +15,10 @@
   &::before {
     content: '';
     position: absolute;
-    width: 14px;
-    height: 6px;
     top: -5px;
     right: 153px;
+    width: 14px;
+    height: 6px;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 6px solid #000;
@@ -26,16 +26,16 @@
 }
 
 .basket__content {
+  background-color: $black;
   display: flex;
   flex-direction: column;
-  background-color: $black;
 }
 
 .basket-list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
 }
 
@@ -71,14 +71,14 @@
 }
 
 .basket-item__name {
+  margin: 0;
+  margin-left: 23px;
+  margin-right: auto;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(255, 255, 255);
-  margin: 0;
-  margin-left: 23px;
-  margin-right: auto;
 }
 
 .basket-item__close-button {
@@ -127,19 +127,19 @@
 }
 
 .basket__wrapper {
-  display: flex;
-  background-color: #1A1A1A;
   padding: 0px 20px;
+  background-color: #1A1A1A;
+  display: flex;
 }
 
 .basket__goods-quantity,
 .basket__total-cost {
+  padding: 12px 0;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(255, 255, 255);
-  padding: 12px 0;
 }
 
 .basket__goods-quantity {
@@ -147,6 +147,10 @@
 }
 
 .basket__open-button {
+  margin: 20px auto;
+  padding: 14.5px 24px;
+  border: none;
+  background-color: $white;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
@@ -155,10 +159,6 @@
   color: rgb(0, 0, 0);
   text-align: center;
   text-transform: uppercase;
-  margin: 20px auto;
-  padding: 14.5px 24px;
-  background-color: $white;
-  border: none;
   text-decoration: none;
 
   &:hover {

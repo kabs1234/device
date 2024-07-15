@@ -10,23 +10,22 @@
 .features__wrapper {
   position: relative;
   width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 72px;
   display: grid;
   grid-template-columns: 287px 475px;
   column-gap: 116px;
-  margin: 0 auto;
-  padding-bottom: 72px;
-
 
   &::before {
     content: "";
     position: absolute;
-    background-color: $black;
-    width: 7px;
-    height: 319px;
     left: 281px;
     right: 0;
     top: 0px;
     bottom: 0;
+    width: 7px;
+    height: 319px;
+    background-color: $black;
   }
 }
 
@@ -65,7 +64,6 @@
 .features-list__button {
   min-width: 160px;
   padding: 9px 18px 11px;
-
 }
 
 .feature {
@@ -81,10 +79,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 136px;
-    height: 164px;
     top: 78px;
     right: -219px;
+    width: 136px;
+    height: 164px;
     background: url("../../images/decorative/mailman.svg") no-repeat;
   }
 }
@@ -93,10 +91,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 171px;
-    height: 195px;
     top: 78px;
     right: -219px;
+    width: 171px;
+    height: 195px;
     background: url("../../images/decorative/warranty.svg") no-repeat;
   }
 }
@@ -105,23 +103,23 @@
   &::after {
     content: "";
     position: absolute;
-    width: 156px;
-    height: 188px;
     top: 78px;
     right: -219px;
+    width: 156px;
+    height: 188px;
     background: url("../../images/decorative/credit.svg") no-repeat;
   }
 }
 
 .feature__name {
+  margin: 0;
+  margin-top: 73px;
+  margin-bottom: 34px;
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin: 0;
-  margin-top: 73px;
-  margin-bottom: 34px;
 }
 
 .feature__description {

@@ -2,19 +2,19 @@
 
 .slider {
   position: relative;
+  margin-top: -123px;
+  margin-right: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: -123px;
-  margin-right: 40px;
 }
 
 .slider__button {
   position: absolute;
+  top: 211px;
   width: 20px;
   height: 60px;
-  top: 211px;
   border: none;
   background: url("../../images/decorative/pointer.svg") no-repeat;
   cursor: pointer;
@@ -43,15 +43,14 @@
 }
 
 .slider-thumbs {
-  display: flex;
   margin: 0;
   margin-left: auto;
   padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
 .slider-thumbs__item {
-
   &:not(:last-child) {
     margin-right: 20px;
   }
@@ -67,13 +66,13 @@
 }
 
 .slider-thumbs__button {
-  display: block;
   width: 12px;
   height: 12px;
   padding: 0;
   border: 2px solid $black;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
+  display: block;
 
   &:hover {
     opacity: 0.6;

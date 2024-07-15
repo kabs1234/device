@@ -6,21 +6,21 @@
   &::before {
     content: "";
     position: absolute;
-    width: 84px;
-    height: 7px;
     left: 0px;
     top: 0px;
+    width: 84px;
+    height: 7px;
     background-color: $black;
   }
 }
 
 .contacts__heading {
+  margin: 47px 0;
   font-family: Raleway;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   color: rgb(0, 0, 0);
-  margin: 47px 0;
 }
 
 .contacts__text {
@@ -29,13 +29,13 @@
 }
 
 .contacts__store {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: Rubik;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: $dark;
-  margin: 0;
-  margin-bottom: 15px;
 }
 
 .contacts__store-location {
@@ -48,20 +48,19 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  text-decoration: underline;
   color: $dark;
   text-decoration: underline;
 }
 
 .contacts__working {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
   font-family: Rubik;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: $dark;
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 15px;
 }
 
 .contacts__working-time {
