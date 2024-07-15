@@ -6,12 +6,6 @@
   margin: 0 auto;
   background-color: $yellow-light;
 
-  &--grid {
-    margin-top: 40px;
-    padding-top: 44px;
-    padding-bottom: 5px;
-  }
-
   &--catalog {
     padding-bottom: 22px;
   }
@@ -23,10 +17,11 @@
   left: 60px;
 }
 
+.header__user-nav {
+  margin: 0 60px;
+}
+
 .header__nav {
   margin: 0 60px;
-
-  &--grid {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }

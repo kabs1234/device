@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
   </head>
   <body class="page-body">
-    <header class="header header--grid">
+    <header class="page-body__header header">
       <svg class="header__logo" width="145.000305" height="36.000023" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M27.21 0L27.21 35.3L19.61 35.3L19.61 32.9C17.91 34.8 15.51 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.39 12.1 9.39C15.51 9.39 18.01 10.6 19.61 12.5L19.61 0L27.21 0ZM19.61 22.7C19.61 18.9 17.11 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.11 28.8 19.61 26.5 19.61 22.7Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
         <path d="M43.72 29.19C45.83 29.19 47.53 28.39 48.53 27.29L54.63 30.79C52.13 34.19 48.43 35.99 43.62 35.99C35.02 35.99 29.62 30.19 29.62 22.69C29.62 15.19 35.02 9.39 43.02 9.39C50.43 9.39 55.83 15.09 55.83 22.69C55.83 23.79 55.73 24.79 55.53 25.69L37.62 25.69C38.62 28.29 40.92 29.19 43.72 29.19ZM48.33 20.09C47.53 17.19 45.23 16.09 42.92 16.09C40.02 16.09 38.12 17.49 37.42 20.09L48.33 20.09Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
@@ -76,8 +76,8 @@
         </div>
       </nav>
 
-      <nav class="header__nav header__nav--grid">
-        <ul class="nav-list">
+      <nav class="header__nav nav">
+        <ul class="nav__list nav-list">
           <li class="nav-list__item dropdown">
             <button class="dropdown-button">Каталог товаров</button>
 
@@ -124,10 +124,10 @@
     <main class="main">
       <h1 class="visually-hidden">Магазин Device это - современные гаджеты, по доступным ценам!</h1>
 
-      <section class="product">
+      <section class="main__product product">
         <span class="product__number">01</span>
 
-        <div class="slider">
+        <div class="product__slider slider">
           <button class="slider__button slider__button--previous">
             <span class="visually-hidden">Предыдущий предмет</span>
           </button>
@@ -255,7 +255,7 @@
         </div>
       </section>
 
-      <section class="categories">
+      <section class="main__categories categories">
         <ul class="categories-list">
           <li class="categories-list__item category">
             <a href="#virtual-reality" class="category__link">
@@ -308,7 +308,7 @@
         </ul>
       </section>
 
-      <section class="features">
+      <section class="main__features features">
         <div class="features__wrapper">
           <ul class="features__list features-list">
             <li class="features-list__item features-list__item--active">
