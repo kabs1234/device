@@ -1,0 +1,129 @@
+
+
+
+.dropdown {
+  margin-right: auto;
+
+  &--active {
+    display: block;
+  }
+}
+
+.dropdown--active .dropdown__wrapper {
+  display: flex;
+}
+
+.dropdown--active .dropdown__list {
+  display: block;
+}
+
+.dropdown--active .dropdown-button::after {
+  width: 16px;
+  height: 2px;
+  top: 23px;
+  background: $black;
+}
+
+.dropdown-button {
+  position: relative;
+  display: block;
+  padding: 15px 69px;
+  padding-left: 0;
+  border: none;
+  background-color: transparent;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3.5px;
+  color: $black;
+  text-transform: uppercase;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid $purple;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $black;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    width: 16px;
+    height: 16px;
+    background: url('../../images/decorative/cross.svg') no-repeat;
+    opacity: 0.3;
+  }
+}
+
+.dropdown-button:hover, .dropdown-button:active {
+  &::before {
+    opacity: 1;
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.dropdown__wrapper {
+  padding: 30px 0;
+  display: none;
+}
+
+.dropdown__list {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.dropdown-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.dropdown-list__item--active .dropdown-list__link {
+  border-bottom: 1px solid $black;
+}
+
+.dropdown__list {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+}
+
+.dropdown-list__link {
+  font-family: 'Rubik';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $yellow-light, 0 0 0 4px $purple;
+  }
+}

@@ -1,0 +1,42 @@
+
+
+
+.socials-list {
+  margin: 0 auto;
+  margin-right: 391px;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.socials-list__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.socials-list__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $yellow-hover;
+  }
+
+  &:active {
+    background-color: $yellow-hover;
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.socials-list__item:has(.socials-list__link:focus-visible) {
+  outline-offset: 2px;
+  outline: 2px solid $purple;
+}

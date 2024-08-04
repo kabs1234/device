@@ -1,0 +1,129 @@
+.features {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient($white 104px, $light 0px);
+}
+
+.main__features {
+  margin-bottom: 70px;
+}
+
+.features__wrapper {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+  display: grid;
+  grid-template-columns: 287px 475px;
+  column-gap: 116px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 281px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    width: 7px;
+    height: 319px;
+    background-color: $black;
+  }
+}
+
+.features__list {
+  margin: 0;
+  margin-top: 64px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.features-list__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.features-list__item--active {
+  background-color: $black;
+}
+
+.features-list__item--active .features-list__button {
+  color: $yellow-light;
+  background-color: transparent;
+
+  &::before {
+    content: none;
+  }
+
+  &:hover {
+   opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.features-list__button {
+  min-width: 160px;
+  padding: 9px 18px 11px;
+}
+
+.feature {
+  position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.feature--delivery {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 79px;
+    right: 62px;
+    width: 136px;
+    height: 164px;
+    background: url("../../images/decorative/mailman.svg") no-repeat;
+  }
+}
+
+.feature--warranty {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 78px;
+    right: -219px;
+    width: 171px;
+    height: 195px;
+    background: url("../../images/decorative/warranty.svg") no-repeat;
+  }
+}
+
+.feature--credit {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 78px;
+    right: -219px;
+    width: 156px;
+    height: 188px;
+    background: url("../../images/decorative/credit.svg") no-repeat;
+  }
+}
+
+.feature__name {
+  margin: 0;
+  margin-top: 73px;
+  margin-bottom: 34px;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: $black;
+}
+
+.feature__description {
+  margin: 0;
+  margin-bottom: 73px;
+}

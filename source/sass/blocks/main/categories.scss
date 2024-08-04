@@ -1,0 +1,19 @@
+.categories {
+  width: 1160px;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.categories-list__item:nth-child(2) .category__image {
+  align-self: flex-end;
+}
+
+.categories-list__item:not(:last-child) {
+  margin-right: 40px;
+}

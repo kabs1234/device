@@ -1,0 +1,31 @@
+.about-us {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 84px;
+    height: 7px;
+    background-color: $black;
+  }
+}
+
+.about-us__heading {
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: $black;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.about-us__text {
+  margin-bottom: 30px;
+}
+
+.about-us__link {
+  padding: 10px 23px;
+}

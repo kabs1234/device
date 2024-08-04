@@ -1,0 +1,39 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__button {
+  position: absolute;
+  top: 211px;
+  width: 20px;
+  height: 60px;
+  border: none;
+  background: url("../../images/decorative/pointer.svg") no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid $purple;
+  }
+
+  &--previous {
+    left: 30px;
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    right: 0;
+  }
+}

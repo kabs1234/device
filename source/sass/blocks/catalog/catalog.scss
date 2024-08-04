@@ -1,0 +1,34 @@
+
+
+.catalog {
+  margin-top: 36px;
+}
+
+.catalog__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog__name {
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 14px;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: $black;
+}
+
+.catalog__container {
+  width: 100%;
+  background-color: $light;
+}
+
+.catalog__inner-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 840px;
+  column-gap: 60px;
+}

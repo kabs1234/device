@@ -1,0 +1,114 @@
+
+
+.card__link {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(130px, 207px) 1fr;
+  grid-template-rows: 380px 40px;
+  row-gap: 32px;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $black;
+  text-decoration: none;
+
+  &::before {
+    content: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid $purple;
+  }
+}
+
+.card__link:hover .card__image-wrapper {
+  &::after {
+    content: "Подробнее";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 20px;
+    margin: auto;
+    background: linear-gradient(transparent 3px,$yellow-light 3px,$yellow-light 11px, transparent 11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 3.5px;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+.card__link:hover .card__name,
+.card__link:hover .card__price,
+.card__link:hover .card__image {
+  opacity: 0.6;
+}
+
+.card__link:active .card__image-wrapper {
+  &::after {
+    background: linear-gradient(transparent 3px,$yellow-hover 3px,$yellow-hover 11px, transparent 11px);
+  }
+}
+
+.card__link:active .card__name,
+.card__link:active .card__price,
+.card__link:hover .card__image {
+  opacity: 0.3;
+}
+
+.card--new .card__image-wrapper {
+  &::before {
+    content: "NEW";
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 3.5px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
+.card__image-wrapper {
+  position: relative;
+  display: block;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.card__name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.card__price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
+  color: $dark;
+}
