@@ -3,16 +3,17 @@
   width: 1160px;
   margin: 0 auto;
   background-color: $yellow-light;
-
-  &--catalog {
-    padding-bottom: 22px;
-  }
 }
 
 .page-body__header {
   margin-top: 40px;
   padding-top: 44px;
   padding-bottom: 5px;
+}
+
+.header--catalog {
+  padding-bottom: 22px;
+
 }
 
 .header__logo {

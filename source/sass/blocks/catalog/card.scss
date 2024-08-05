@@ -1,5 +1,3 @@
-
-
 .card__link {
   position: relative;
   display: grid;
@@ -34,7 +32,7 @@
     width: 220px;
     height: 20px;
     margin: auto;
-    background: linear-gradient(transparent 3px,$yellow-light 3px,$yellow-light 11px, transparent 11px);
+    background: linear-gradient(transparent 4px,$yellow-light 4px,$yellow-light 12px, transparent 12px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +56,7 @@
 
 .card__link:active .card__image-wrapper {
   &::after {
-    background: linear-gradient(transparent 3px,$yellow-hover 3px,$yellow-hover 11px, transparent 11px);
+    background: linear-gradient(transparent 4px,$yellow-hover 4px,$yellow-hover 12px, transparent 12px);
   }
 }
 

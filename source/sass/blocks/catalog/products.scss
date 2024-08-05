@@ -1,7 +1,5 @@
-
-
 .catalog-products {
-  padding-bottom: 72px;
+  padding-bottom: 78px;
   background-color: $white;
   grid-column: 2/3;
 }
@@ -17,9 +15,10 @@
 
 .catalog-product__button {
   min-width: 760px;
+  min-height: 55px;
   margin: 0 auto;
   margin-bottom: 44px;
-  padding: 17px 39px;
+  padding: 0;
   border: 3px solid rgb(229, 229, 229);
   background-color: transparent;
   display: block;
