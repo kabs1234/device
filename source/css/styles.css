@@ -165,7 +165,7 @@ body {
 .user-nav__login-button,
 .user-nav__link {
   padding-left: 27px;
-  background: url("../../images/decorative/cabinet.svg") no-repeat 0 center;
+  background: url("../images/decorative/cabinet.svg") no-repeat 0 center;
 }
 
 .user-nav__logged-in,
@@ -254,7 +254,7 @@ body {
 .user-nav__compare {
   position: relative;
   padding-left: 22px;
-  background: url("../../images/decorative/compare.svg") 0 center no-repeat;
+  background: url("../images/decorative/compare.svg") 0 center no-repeat;
   color: #000000;
   text-decoration: none;
 }
@@ -300,7 +300,7 @@ body {
   height: 14px;
   top: 6px;
   left: 16px;
-  background: url("../../images/decorative/basket.svg") no-repeat;
+  background: url("../images/decorative/basket.svg") no-repeat;
 }
 
 .user-nav__goods-quantity {
@@ -365,7 +365,7 @@ body {
   left: 17px;
   width: 16px;
   height: 16px;
-  background: url("../../images/decorative/find.svg") no-repeat;
+  background: url("../images/decorative/find.svg") no-repeat;
 }
 
 .search-button {
@@ -438,7 +438,7 @@ body {
   flex-direction: column;
 }
 
-.basket-list {
+.basket__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -660,7 +660,7 @@ body {
   right: 17px;
   width: 16px;
   height: 16px;
-  background: url("../../images/decorative/cross.svg") no-repeat;
+  background: url("../images/decorative/cross.svg") no-repeat;
   opacity: 0.3;
 }
 
@@ -784,7 +784,7 @@ body {
   top: 0;
   width: 125px;
   height: 100px;
-  background: #ffe17f url("../../images/decorative/delivery.svg") no-repeat center;
+  background: #ffe17f url("../images/decorative/delivery.svg") no-repeat center;
 }
 .main__delivery-button::after {
   content: "i";
@@ -921,7 +921,7 @@ body {
   width: 20px;
   height: 60px;
   border: none;
-  background: url("../../images/decorative/pointer.svg") no-repeat;
+  background: url("../images/decorative/pointer.svg") no-repeat;
   cursor: pointer;
 }
 .slider__button:hover {
@@ -1123,7 +1123,7 @@ body {
   right: -219px;
   width: 136px;
   height: 164px;
-  background: url("../../images/decorative/mailman.svg") no-repeat;
+  background: url("../images/decorative/mailman.svg") no-repeat;
 }
 
 .feature--warranty::after {
@@ -1133,7 +1133,7 @@ body {
   right: -219px;
   width: 171px;
   height: 195px;
-  background: url("../../images/decorative/warranty.svg") no-repeat;
+  background: url("../images/decorative/warranty.svg") no-repeat;
 }
 
 .feature--credit::after {
@@ -1143,7 +1143,7 @@ body {
   right: -219px;
   width: 156px;
   height: 188px;
-  background: url("../../images/decorative/credit.svg") no-repeat;
+  background: url("../images/decorative/credit.svg") no-repeat;
 }
 
 .feature__name {
@@ -1403,7 +1403,7 @@ body {
   left: -31px;
   width: 14px;
   height: 14px;
-  background: url("../../images/decorative/checked-green.svg") no-repeat;
+  background: url("../images/decorative/checked-green.svg") no-repeat;
 }
 
 .catalog {
@@ -1472,7 +1472,7 @@ body {
   height: 7px;
   top: 5px;
   right: -23px;
-  background: url("../../images/decorative/nav-arrow.svg") no-repeat;
+  background: url("../images/decorative/nav-arrow.svg") no-repeat;
   opacity: 0.3;
 }
 
@@ -1695,7 +1695,7 @@ body {
 
 .checkbox__input:checked ~ .checkbox__checkmark {
   border: 2px solid #000000;
-  background: url("../../images/decorative/checked.svg") no-repeat center;
+  background: url("../images/decorative/checked.svg") no-repeat center;
 }
 
 .checkbox__input:disabled .checkbox__list__item {
@@ -2344,7 +2344,7 @@ body {
   height: 26px;
   padding: 12px;
   border: none;
-  background: transparent url("../../images/content/close.svg");
+  background: transparent url("../images/content/close.svg");
   cursor: pointer;
 }
 .modal__close-button:hover {
@@ -2446,11 +2446,11 @@ body {
 }
 
 .delivery-form__input--name {
-  background: #f0f0f0 url("../../images/decorative/modal-auth.svg") no-repeat 326px 24px;
+  background: #f0f0f0 url("../images/decorative/modal-auth.svg") no-repeat 326px 24px;
 }
 
 .delivery-form__input--email {
-  background: #f0f0f0 url("../../images/decorative/mail.svg") no-repeat 325px 24px;
+  background: #f0f0f0 url("../images/decorative/mail.svg") no-repeat 325px 24px;
 }
 
 .delivery-form__input--product {
@@ -2545,7 +2545,7 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #ffe17f url("../../images/decorative/info.svg") no-repeat center;
+  background: #ffe17f url("../images/decorative/info.svg") no-repeat center;
   display: block;
 }
 

@@ -9,7 +9,6 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const imgmin = require("gulp-imagemin");
-const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const browserSync = require('browser-sync').create();
@@ -29,7 +28,7 @@ exports.styles = styles;
 // minStyles
 
 const minStyles = () => {
-  return gulp.src("./source/scss/global/styles.scss")
+  return gulp.src("./source/sass/global/styles.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -68,16 +67,6 @@ const copyImages = () => {
 
 exports.copyImages = copyImages;
 
-// webP
-
-const createWebp = () => {
-  return gulp.src('source/images/**/*.{jpg,png}')
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('build/images'))
-}
-
-exports.createWebp = createWebp;
-
 // html
 
 const minHtml = () => {
@@ -103,9 +92,8 @@ exports.scripts = scripts
 
 const copy = (done) => {
   gulp.src([
-    "source/fonts/*.{woff2, woff}",
-    "source/*.ico",
-    "source/images/**/*.svg"
+    "source/fonts/**/*.{woff2, woff}",
+    "source/*.ico"
   ], {
     base: "source"
   })
@@ -150,12 +138,11 @@ const build = gulp.series(
   clean,
   copy,
   copyImages,
-  // optimizeImages,
+  optimizeImages,
   gulp.parallel(
     minStyles,
     minHtml,
     scripts,
-    createWebp
   )
 )
 
