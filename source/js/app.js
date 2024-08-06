@@ -1,7 +1,7 @@
-const dropdownMenu = document.querySelector('.dropdown');
-const dropdownButton = document.querySelector('.dropdown-button');
+const dropdownMenu = document.querySelector('.dropdown__menu');
+const dropdownButton = document.querySelector('.dropdown__button');
 
 
 dropdownButton.addEventListener('click', () => {
-  dropdownMenu.classList.toggle('dropdown--active');
+  dropdownMenu.classList.toggle('dropdown__menu--active');
 })

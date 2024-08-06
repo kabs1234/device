@@ -10,6 +10,20 @@
   color: $black;
 }
 
+.radio__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.radio__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 .radio__label {
   position: relative;
   display: block;

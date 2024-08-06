@@ -77,39 +77,40 @@
       </nav>
 
       <nav class="header__nav nav">
-        <ul class="nav__list nav-list">
-          <li class="nav-list__item dropdown">
-            <button class="dropdown-button">Каталог товаров</button>
+        <div class="dropdown">
+          <button class="dropdown__button">Каталог товаров</button>
 
-            <div class="dropdown__wrapper">
-              <ul class="dropdown__list dropdown-list">
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link">Виртуальная реальность</a>
-                </li>
-                <li class="dropdown-list__item dropdown-list__item--active">
-                  <a class="dropdown-list__link">Моноподы для cелфи</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="dropdown__list dropdown-list">
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link">Фитнес-браслеты</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="dropdown__list dropdown-list">
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-          </li>
+          <div class="dropdown__menu">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a class="dropdown__link">Виртуальная реальность</a>
+              </li>
+              <li class="dropdown__item dropdown__item--active">
+                <a class="dropdown__link">Моноподы для cелфи</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a class="dropdown__link">Фитнес-браслеты</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a class="dropdown__link">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="nav-list">
           <li class="nav-list__item nav-list__item--active">
-            <a href="index.html#delievery" class="nav-list__link">Доставка</a>
+            <a href="index.html#delivery" class="nav-list__link">Доставка</a>
           </li>
           <li class="nav-list__item">
             <a href="index.html#features" class="nav-list__link">Гарантия</a>
@@ -204,14 +205,20 @@
               <fieldset class="filter__radio radio">
                 <legend class="radio__legend">Bluetooth</legend>
 
-                <label class="radio__label"> Есть
-                  <input type="radio" class="radio__input" value="with" name="bluetooth" checked>
-                  <span class="radio__checkmark"></span>
-                </label>
-                <label class="radio__label"> Нет
-                  <input type="radio" class="radio__input" value="without" name="bluetooth">
-                  <span class="radio__checkmark"></span>
-                </label>
+                <ul class="radio__list">
+                  <li class="radio__item">
+                    <label class="radio__label"> Есть
+                      <input type="radio" class="radio__input" value="with" name="bluetooth" checked>
+                      <span class="radio__checkmark"></span>
+                    </label>
+                  </li>
+                  <li class="radio__item">
+                    <label class="radio__label"> Нет
+                      <input type="radio" class="radio__input" value="without" name="bluetooth">
+                      <span class="radio__checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
 
               <button type="submit" class="filter__submit button">Показать</button>

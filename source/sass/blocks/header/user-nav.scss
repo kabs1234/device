@@ -1,3 +1,7 @@
+.header__user-nav {
+  margin: 0 60px;
+}
+
 .user-nav {
   position: relative;
   color: $black;
@@ -13,6 +17,7 @@
 
 .user-nav__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 

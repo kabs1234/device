@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: minmax(130px, 207px) 1fr;
-  grid-template-rows: 380px 40px;
+  grid-template-rows: 380px minmax(40px, auto);
   row-gap: 32px;
   font-family: 'Rubik';
   font-size: 18px;

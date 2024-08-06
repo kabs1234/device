@@ -1,19 +1,14 @@
-
-
 .nav-list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .nav-list__item {
-  &:nth-child(2) {
-    margin-right: 47px;
-  }
-
-  &:nth-child(3) {
-    margin-right: 52px;
+  &:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
