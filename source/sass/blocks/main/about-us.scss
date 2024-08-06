@@ -29,3 +29,31 @@
 .about-us__link {
   padding: 10px 23px;
 }
+
+.about-us__delivery-companies {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+}
+
+.about-us__delivery-company {
+  margin-left: 21px;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $black;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.about-us__delivery-company::marker {
+  color: $yellow-hover;
+}
+
+.about-us__company-name {
+  position: relative;
+  left: 15px;
+}

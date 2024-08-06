@@ -1041,11 +1041,11 @@ body {
 
 .features {
   width: 100%;
-  margin: 0 auto;
   background: linear-gradient(#fff 104px, #f0f0f0 0px);
 }
 
 .main__features {
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -1189,13 +1189,13 @@ body {
   padding: 10px 23px;
 }
 
-.about-us__transport-companies {
+.about-us__delivery-companies {
   margin: 0;
   margin-bottom: 37px;
   padding: 0;
 }
 
-.transport-companies__item {
+.about-us__delivery-company {
   margin-left: 21px;
   font-family: "Rubik";
   font-size: 18px;
@@ -1203,15 +1203,15 @@ body {
   line-height: 20px;
   color: #000;
 }
-.transport-companies__item:not(:last-child) {
+.about-us__delivery-company:not(:last-child) {
   margin-bottom: 19px;
 }
 
-.transport-companies__item::marker {
+.about-us__delivery-company::marker {
   color: #ffc700;
 }
 
-.transport-companies__name {
+.about-us__company-name {
   position: relative;
   left: 15px;
 }
@@ -1434,16 +1434,19 @@ body {
   column-gap: 60px;
 }
 
-.breadcrumbs-list {
+.breadcrumbs {
   margin: 0;
-  margin-left: 60px;
-  margin-bottom: 35px;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-.breadcrumbs-list__item {
+.catalog__breadcrumbs {
+  margin-left: 60px;
+  margin-bottom: 35px;
+}
+
+.breadcrumbs__item {
   position: relative;
   font-family: "Rubik";
   font-size: 16px;
@@ -1453,10 +1456,10 @@ body {
   letter-spacing: 0%;
 }
 
-.breadcrumbs-list__item:not(:last-child) {
+.breadcrumbs__item:not(:last-child) {
   margin-right: 38px;
 }
-.breadcrumbs-list__item:not(:last-child)::after {
+.breadcrumbs__item:not(:last-child)::after {
   content: "";
   position: absolute;
   width: 4px;
@@ -1467,25 +1470,25 @@ body {
   opacity: 0.3;
 }
 
-.breadcrumbs-list__link {
+.breadcrumbs__link {
   color: #000;
   text-decoration: none;
 }
-.breadcrumbs-list__link:hover {
+.breadcrumbs__link:hover {
   opacity: 0.6;
 }
-.breadcrumbs-list__link:active {
+.breadcrumbs__link:active {
   opacity: 0.3;
 }
-.breadcrumbs-list__link:focus-visible {
+.breadcrumbs__link:focus-visible {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
 }
 
-.breadcrumbs-list__item--active .breadcrumbs-list__link:hover {
+.breadcrumbs__item--active .breadcrumbs__link:hover {
   opacity: 1;
 }
-.breadcrumbs-list__item--active .breadcrumbs-list__link:active {
+.breadcrumbs__item--active .breadcrumbs__link:active {
   opacity: 1;
 }
 
@@ -1791,7 +1794,7 @@ body {
   row-gap: 44px;
 }
 
-.catalog-product__button {
+.catalog-products__button {
   min-width: 760px;
   min-height: 55px;
   margin: 0 auto;
@@ -1808,18 +1811,18 @@ body {
   color: #000;
   text-transform: uppercase;
 }
-.catalog-product__button:hover {
+.catalog-products__button:hover {
   border: 3px solid #000;
 }
-.catalog-product__button:active {
+.catalog-products__button:active {
   border: 3px solid #000;
   opacity: 0.3;
 }
-.catalog-product__button:focus-visible {
+.catalog-products__button:focus-visible {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
 }
-.catalog-product__button--not-active {
+.catalog-products__button--not-active {
   border: 3px solid rgb(229, 229, 229);
   opacity: 0.3;
 }
@@ -2018,8 +2021,11 @@ body {
   color: #444444;
 }
 
-.pagination {
+.catalog-products__pagination {
   margin: 0 40px;
+}
+
+.pagination {
   background-color: #ebebeb;
   display: flex;
   align-items: center;
@@ -2155,18 +2161,18 @@ body {
   color: #fff;
 }
 
-.footer-list__item:not(:last-child) {
+.footer-nav__item:not(:last-child) {
   margin-right: 32px;
 }
 
-.footer-list {
+.footer-nav__list {
   margin: 0 auto;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-.footer-list__link {
+.footer-nav__link {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
@@ -2176,16 +2182,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.footer-list__link:hover {
+.footer-nav__link:hover {
   color: #ffc700;
   border-bottom: 2px solid #ffc700;
 }
-.footer-list__link:active {
+.footer-nav__link:active {
   color: #ffc700;
   border-bottom: 2px solid #ffc700;
   opacity: 0.3;
 }
-.footer-list__link:focus-visible {
+.footer-nav__link:focus-visible {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
 }

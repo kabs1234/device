@@ -43,18 +43,18 @@
   color: $white;
 }
 
-.footer-list__item:not(:last-child) {
+.footer-nav__item:not(:last-child) {
   margin-right: 32px;
 }
 
-.footer-list {
+.footer-nav__list {
   margin: 0 auto;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-.footer-list__link {
+.footer-nav__link {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;

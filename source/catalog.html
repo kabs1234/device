@@ -125,15 +125,15 @@
       <div class="catalog__wrapper">
         <h1 class="catalog__name">Моноподы для селфи</h1>
 
-        <ul class="catalog__breadcrumbs-list breadcrumbs-list">
-          <li class="breadcrumbs-list__item">
-            <a href="#main" class="breadcrumbs-list__link">Главная</a>
+        <ul class="catalog__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#main" class="breadcrumbs__link">Главная</a>
           </li>
-          <li class="breadcrumbs-list__item">
-            <a href="#catalog-all" class="breadcrumbs-list__link">Каталог товаров</a>
+          <li class="breadcrumbs__item">
+            <a href="#catalog-all" class="breadcrumbs__link">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
-            <a class="breadcrumbs-list__link">Моноподы для селфи</a>
+          <li class="breadcrumbs__item breadcrumbs__item--active">
+            <a class="breadcrumbs__link">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -219,13 +219,13 @@
           </section>
 
           <section class="catalog__products catalog-products">
-            <div class="catalog__sort sort">
+            <div class="sort">
               <p class="sort__label">сортировка:</p>
 
-              <select class="sort__menu sort-menu">
-                <option class="sort-menu-item" value="by-popularity">Популярные</option>
-                <option class="sort-menu-item" value="by-price">Дешевые</option>
-                <option class="sort-menu-item" value="by-date">Новые</option>
+              <select class="sort__menu">
+                <option class="sort__option" value="by-popularity">Популярные</option>
+                <option class="sort__option" value="by-price">Дешевые</option>
+                <option class="sort__option" value="by-date">Новые</option>
               </select>
 
               <div class="sort__button-wrapper">
@@ -239,8 +239,8 @@
             </div>
 
             <div class="catalog-products__list">
-              <div class="catalog-product__card card">
-                <a href="" class="card__link">
+              <div class="card">
+                <a class="card__link" href="#product-page">
                   <div class="card__image-wrapper">
                     <img src="./images/content/catalog-product-1.jpg" alt="Любительская селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="card__image">
                   </div>
@@ -248,8 +248,8 @@
                   <span class="card__price">500 ₽</span>
                 </a>
               </div>
-              <div class="catalog-product__card card card--new">
-                <a href="" class="card__link">
+              <div class="card card--new">
+                <a class="card__link" href="#product-page">
                   <div class="card__image-wrapper">
                     <img src="./images/content/catalog-product-2.jpg" alt="Профессиональная селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="card__image">
                   </div>
@@ -257,8 +257,8 @@
                   <span class="card__price">1 500 ₽</span>
                 </a>
               </div>
-              <div class="catalog-product__card card">
-                <a href="" class="card__link">
+              <div class="card">
+                <a class="card__link" href="#product-page">
                   <div class="card__image-wrapper">
                     <img src="./images/content/catalog-product-3.jpg" alt="Непотопляемая селфи-палка - такая-то штука, делает то-то, дизайн такой-то" class="card__image">
                   </div>
@@ -266,8 +266,8 @@
                   <span class="card__price">2 500 ₽</span>
                 </a>
               </div>
-              <div class="catalog-product__card card">
-                <a href="" class="card__link">
+              <div class="card">
+                <a class="card__link" href="#product-page">
                   <div class="card__image-wrapper">
                     <img src="./images/content/catalog-product-4.jpg" alt="Селфи-палка «Следуй за мной» - такая-то штука, делает то-то, дизайн такой-то" class="card__image">
                   </div>
@@ -277,9 +277,9 @@
               </div>
             </div>
 
-            <button class="catalog-product__button">Загрузить ещё</button>
+            <button class="catalog-products__button">Загрузить ещё</button>
 
-            <div class="catalog-product__pagination pagination">
+            <div class="catalog-products__pagination pagination">
               <a href="#prev" class="pagination__button pagination__button--previous">Назад</a>
               <ol class="pagination__list">
                 <li class="pagination__item pagination__item--active">
@@ -320,16 +320,16 @@
         <div class="footer__container">
           <address class="footer__address">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</address>
 
-          <nav class="footer__nav footer-nav">
-            <ul class="footer-nav__list footer-list">
-              <li class="footer-list__item">
-                <a href="#delivery" class="footer-list__link">Доставка</a>
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#delivery" class="footer-nav__link">Доставка</a>
               </li>
-              <li class="footer-list__item">
-                <a href="#features" class="footer-list__link">Гарантия</a>
+              <li class="footer-nav__item">
+                <a href="#features" class="footer-nav__link">Гарантия</a>
               </li>
-              <li class="footer-list__item">
-                <a href="#features" class="footer-list__link">Контакты</a>
+              <li class="footer-nav__item">
+                <a href="#features" class="footer-nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
