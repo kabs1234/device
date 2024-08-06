@@ -14,7 +14,7 @@
   }
 }
 
-.category__link:hover .category__image-wrapper{
+.category__link:hover .category__image-wrapper {
   background-color: $yellow-hover;
 }
 
@@ -31,7 +31,7 @@
 .category__name {
   min-height: 60px;
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;

@@ -23,7 +23,7 @@
     "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
-    "stylelint": "stylelint \"./source/scss/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"./source/sass/**/*.scss\" --syntax scss",
     "build": "gulp build",
     "start": "gulp"
   },

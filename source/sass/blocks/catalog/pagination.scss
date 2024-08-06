@@ -38,7 +38,7 @@
 .pagination__button {
   padding: 25px;
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -55,7 +55,8 @@
     color: rgba($color: #000000, $alpha: 0.3);
   }
 
-  &:focus, &:focus-visible {
+  &:focus,
+  &:focus-visible {
     outline-offset: 2px;
     outline: 2px solid $purple;
   }
@@ -73,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

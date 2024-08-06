@@ -4,7 +4,7 @@
   grid-template-columns: minmax(130px, 207px) 1fr;
   grid-template-rows: 380px minmax(40px, auto);
   row-gap: 32px;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -32,11 +32,11 @@
     width: 220px;
     height: 20px;
     margin: auto;
-    background: linear-gradient(transparent 4px,$yellow-light 4px,$yellow-light 12px, transparent 12px);
+    background: linear-gradient(transparent 4px, $yellow-light 4px, $yellow-light 12px, transparent 12px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Raleway;
+    font-family: "Raleway", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
@@ -56,7 +56,7 @@
 
 .card__link:active .card__image-wrapper {
   &::after {
-    background: linear-gradient(transparent 4px,$yellow-hover 4px,$yellow-hover 12px, transparent 12px);
+    background: linear-gradient(transparent 4px, $yellow-hover 4px, $yellow-hover 12px, transparent 12px);
   }
 }
 
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Raleway;
+    font-family: "Raleway", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 800;
     line-height: 16px;

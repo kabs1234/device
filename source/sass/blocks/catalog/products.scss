@@ -6,7 +6,7 @@
 
 .catalog-products__list {
   margin-bottom: 44px;
-  padding: 70px 40px 0px 40px;
+  padding: 70px 40px 0 40px;
   display: grid;
   grid-template-columns: repeat(2, 360px);
   column-gap: 40px;
@@ -22,7 +22,7 @@
   border: 3px solid rgb(229, 229, 229);
   background-color: transparent;
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;

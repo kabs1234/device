@@ -9,7 +9,7 @@
   grid-template-columns: 519px 494px;
   align-items: center;
   column-gap: 24px;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -21,12 +21,14 @@
   flex-direction: row;
 }
 
-.user-nav__login-button, .user-nav__link {
+.user-nav__login-button,
+.user-nav__link {
   padding-left: 27px;
-  background: url("../../images/decorative/cabinet.svg") no-repeat 0px center;
+  background: url("../../images/decorative/cabinet.svg") no-repeat 0 center;
 }
 
-.user-nav__logged-in, .user-nav__login {
+.user-nav__logged-in,
+.user-nav__login {
   display: none;
 
   &--active {
@@ -37,9 +39,9 @@
 
 .user-nav__link {
   margin-right: 28px;
-  padding: 4px 0px;
+  padding: 4px 0;
   padding-left: 24px;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -68,7 +70,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -91,7 +93,7 @@
 }
 
 .user-nav__login-button {
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -123,7 +125,7 @@
   position: relative;
   padding-left: 22px;
   background: url("../../images/decorative/compare.svg") 0 center no-repeat;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 
   &:hover {
@@ -147,7 +149,7 @@
   padding-left: 40px;
   border: none;
   background-color: transparent;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -181,7 +183,7 @@
 .user-nav__goods-quantity {
   position: absolute;
   top: 5px;
-  left: 0px;
+  left: 0;
   min-width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -189,7 +191,7 @@
   justify-content: center;
   align-items: center;
   background-color: $white;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;

@@ -1,6 +1,6 @@
 .features {
   width: 100%;
-  background: linear-gradient($white 104px, $light 0px);
+  background: linear-gradient($white 104px, $light 0);
 }
 
 .main__features {
@@ -22,7 +22,7 @@
     position: absolute;
     left: 281px;
     right: 0;
-    top: 0px;
+    top: 0;
     bottom: 0;
     width: 7px;
     height: 319px;
@@ -54,7 +54,7 @@
   }
 
   &:hover {
-   opacity: 0.6;
+    opacity: 0.6;
   }
 
   &:active {
@@ -116,7 +116,7 @@
   margin: 0;
   margin-top: 73px;
   margin-bottom: 34px;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
